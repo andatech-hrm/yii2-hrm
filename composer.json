@@ -21,7 +21,7 @@
         "andatech/yii2-user": "dev-master",
         "andatech/yii2-core": "dev-master",
         "yiister/yii2-gentelella": "~1.0",
-        "andatech-hrm/yii2-person": "dev-master"
+        "andatech-hrm/yii2-person": "dev-master",
         "andatech-hrm/yii2-organizational-structure": "dev-master"
     },
     "require-dev": {
