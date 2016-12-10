@@ -19,7 +19,8 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "andatech/yii2-user": "dev-master",
-        "andatech/yii2-core": "dev-master"
+        "andatech/yii2-core": "dev-master",
+        "hryala/yii2-organizational-structure": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

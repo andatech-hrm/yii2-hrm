@@ -47,11 +47,15 @@ return [
             'rules' => [
             ],
         ],
+        'authManager' => [
+            'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
+        ],
+    ],
         'as access' => [
             'class' => 'mdm\admin\components\AccessControl',
             'allowActions' => [
                 'site/*',
-                'admin/*',
+                'rbac/*',
                 'some-controller/some-action',
                 // The actions listed here will be allowed to everyone including guests.
                 // So, 'admin/*' should not appear here in the production, of course.
@@ -60,6 +64,5 @@ return [
                 // otherwise you may not even take a first step.
             ]
         ],
-    ],
     'params' => $params,
 ];

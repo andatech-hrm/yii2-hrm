@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "9472d80b784428725d13de24d0eec882",
+    "content-hash": "5fc14966c508f367c6eb86a43dde4f23",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -591,6 +591,55 @@
                 "icon"
             ],
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "hryala/yii2-organizational-structure",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hryala/yii2-organizational-structure.git",
+                "reference": "f4f45e3f5c599ffce3f4c5e2052f620beb18beee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hryala/yii2-organizational-structure/zipball/f4f45e3f5c599ffce3f4c5e2052f620beb18beee",
+                "reference": "f4f45e3f5c599ffce3f4c5e2052f620beb18beee",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "hryala\\structure\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Organizational Structure",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-12-10 05:49:11"
         },
         {
             "name": "imagine/imagine",
@@ -3371,7 +3420,8 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "andatech/yii2-user": 20,
-        "andatech/yii2-core": 20
+        "andatech/yii2-core": 20,
+        "hryala/yii2-organizational-structure": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
