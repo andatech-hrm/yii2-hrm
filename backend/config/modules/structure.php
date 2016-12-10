@@ -1,4 +1,4 @@
 <?php
 return  [
-        'class' => 'hryala\structure\Module',
+        'class' => 'andahrm\structure\Module',
    ];
