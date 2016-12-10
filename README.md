@@ -7,3 +7,6 @@ Yii 2 Advanced Project Template
 5. config db common/config/mani-local.php
 
 HAPPY
+
+
+By Andatech
