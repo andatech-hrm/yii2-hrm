@@ -20,13 +20,14 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0",
         "andatech/yii2-user": "dev-master",
         "andatech/yii2-core": "dev-master",
-        "hryala/yii2-organizational-structure": "dev-master"
+        "yiister/yii2-gentelella": "~1.0",
+        "andatech-hrm/yii2-person": "dev-master"
+        "andatech-hrm/yii2-organizational-structure": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
         "yiisoft/yii2-gii": "~2.0.0",
         "yiisoft/yii2-faker": "~2.0.0",
-
         "codeception/base": "^2.2.3",
         "codeception/verify": "~0.3.1"
     },
