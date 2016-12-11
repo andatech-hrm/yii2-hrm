@@ -23,7 +23,8 @@
         "yiister/yii2-gentelella": "~1.0",
         "andatech-hrm/yii2-person": "dev-master",
         "andatech-hrm/yii2-organizational-structure": "dev-master",
-        "andatech-hrm/yii2-app-setting": "dev-master"
+        "andatech-hrm/yii2-app-setting": "dev-master",
+        "kuakling/yii2-lobibox": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

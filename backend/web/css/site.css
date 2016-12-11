@@ -118,3 +118,9 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+
+/******Update by Surakit******/
+.page-title .title_right .pull-right .breadcrumb {
+    margin-bottom: 0;
+}
