@@ -24,7 +24,10 @@
         "andatech-hrm/yii2-person": "dev-master",
         "andatech-hrm/yii2-organizational-structure": "dev-master",
         "andatech-hrm/yii2-app-setting": "dev-master",
-        "kuakling/yii2-lobibox": "dev-master"
+        "kuakling/yii2-lobibox": "dev-master",
+        "kartik-v/yii2-grid": "@dev",
+        "kartik-v/yii2-export": "*",
+        "kartik-v/yii2-mpdf": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

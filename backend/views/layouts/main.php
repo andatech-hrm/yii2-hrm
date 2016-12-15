@@ -66,9 +66,13 @@ $userInfo = $user->profile->getResultInfo();
                         <?=
                         \yiister\gentelella\widgets\Menu::widget(
                             [
+                                //"activeCssClass" => "current-page",
                                 "items" => [
-                                    ["label" => "Home", "url" => "/", "icon" => "home"],
-                                    ["label" => "Person", "url" => ["/person"], "icon" => "files-o"],
+                                    ["label" => "Home", "url" => ["/"], "icon" => "home"],
+                                    ["label" => "Person", "url" => '#', "icon" => "users", "items" => [
+                                         ["label" => "People", "url" => ["/person/default/index"], ['itemOptions' => ['class' => 'abcd']]],
+                                         ["label" => "Position", "url" => ["/person/position/index"]],
+                                    ]],
                                     ["label" => "Structure", "url" => ["/structure"], "icon" => "files-o"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
@@ -316,7 +320,6 @@ $userInfo = $user->profile->getResultInfo();
                     'msg' => (isset($message['msg'])) ? $message['msg'] : '',
                 ]);
             endforeach;
-            
             ?>
             <?= $content ?>
         </div>
@@ -346,6 +349,17 @@ $this->registerJs("$('form').submit(function(){
      var submitBtns = $(this).find(':submit');
      submitBtns.find('.fa').attr('class', 'fa fa-spinner fa-spin');
      submitBtns.addClass('disabled');
+});
+
+var \$SIDEBAR_MENU = $('#sidebar-menu');
+var actionIndex = '".Yii::$app->request->baseUrl.'/'.$this->context->module->id."/".$this->context->id."/index';
+\$SIDEBAR_MENU.find('a[href=\"'+actionIndex+'\"]').parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
+
+\$('a').click(function(){
+    var \$HREF = $(this).attr('href');
+    if(\$HREF === '#' || \$HREF === '#!'){
+        return false;
+    }
 });
 ");
 ?>
