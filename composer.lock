@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "582e7d52c8d5c113e7b58e89b24f0f6a",
+    "content-hash": "db5d52e1d7d638c2f042e22b0e06a417",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -101,17 +101,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andatech-hrm/yii2-organizational-structure.git",
-                "reference": "fada2df5112b7af744253619364dd41b89c515ae"
+                "reference": "2d5284343b5d7a3b75ddcf89c49fed75b666f677"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andatech-hrm/yii2-organizational-structure/zipball/fada2df5112b7af744253619364dd41b89c515ae",
-                "reference": "fada2df5112b7af744253619364dd41b89c515ae",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-organizational-structure/zipball/2d5284343b5d7a3b75ddcf89c49fed75b666f677",
+                "reference": "2d5284343b5d7a3b75ddcf89c49fed75b666f677",
                 "shasum": ""
             },
             "require": {
+                "dmstr/yii2-adminlte-asset": "2.*",
                 "kartik-v/yii2-tree-manager": "@dev",
-                "wbraganca/yii2-fancytree-widget": "*"
+                "wbraganca/yii2-fancytree-widget": "*",
+                "wbraganca/yii2-nested-set-behavior": "*"
             },
             "type": "yii2-extension",
             "extra": {
@@ -146,7 +148,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-12-11 14:39:02"
+            "time": "2016-12-15 08:50:47"
         },
         {
             "name": "andatech-hrm/yii2-person",
@@ -1921,6 +1923,54 @@
                 "yii2-fancytree-widget"
             ],
             "time": "2015-11-08T14:15:16+00:00"
+        },
+        {
+            "name": "wbraganca/yii2-nested-set-behavior",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wbraganca/yii2-nested-set-behavior.git",
+                "reference": "0a664fda4be5f182066dc3e4fc22dfbccc17742b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wbraganca/yii2-nested-set-behavior/zipball/0a664fda4be5f182066dc3e4fc22dfbccc17742b",
+                "reference": "0a664fda4be5f182066dc3e4fc22dfbccc17742b",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "wbraganca\\behaviors\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Wanderson Bragança",
+                    "email": "wanderson.wbc@gmail.com"
+                },
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "wbraganca@gmail.com"
+                }
+            ],
+            "description": "This extension allows you to get functional for nested set trees.",
+            "homepage": "https://github.com/wbraganca/yii2-nested-set-behavior",
+            "keywords": [
+                "extension",
+                "nested set",
+                "yii2",
+                "yii2 behavior",
+                "yii2-nested-set-behavior"
+            ],
+            "time": "2014-12-01 10:58:31"
         },
         {
             "name": "yiisoft/yii2",
@@ -4488,7 +4538,7 @@
         }
     ],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "andatech/yii2-user": 20,
         "andatech/yii2-core": 20,
