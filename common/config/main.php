@@ -18,6 +18,14 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
+        'i18n' => [
+            'translations' => [
+                'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    'sourceLanguage' => 'en-US',
+                ],
+            ],
+        ],
     ],
     'aliases' => [
         '@themes' => dirname(dirname(__DIR__)) . '/themes',

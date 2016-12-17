@@ -40,7 +40,7 @@ $userInfo = $user->profile->getResultInfo();
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/" class="site_title"><i class="fa fa-paw"></i> <span><?= Yii::$app->name; ?></span></a>
+                    <a href="/" class="site_title"><i class="fa fa-users"></i> <span><?= Yii::$app->name; ?></span></a>
                 </div>
                 <div class="clearfix"></div>
 

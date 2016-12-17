@@ -101,17 +101,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andatech-hrm/yii2-organizational-structure.git",
-                "reference": "2d5284343b5d7a3b75ddcf89c49fed75b666f677"
+                "reference": "62fcaf596b8f13529371448f29c36feb678656e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andatech-hrm/yii2-organizational-structure/zipball/2d5284343b5d7a3b75ddcf89c49fed75b666f677",
-                "reference": "2d5284343b5d7a3b75ddcf89c49fed75b666f677",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-organizational-structure/zipball/62fcaf596b8f13529371448f29c36feb678656e7",
+                "reference": "62fcaf596b8f13529371448f29c36feb678656e7",
                 "shasum": ""
             },
             "require": {
                 "dmstr/yii2-adminlte-asset": "2.*",
-                "kartik-v/yii2-tree-manager": "@dev",
+                "mdmsoft/yii2-autonumber": "~1.0",
                 "wbraganca/yii2-fancytree-widget": "*",
                 "wbraganca/yii2-nested-set-behavior": "*"
             },
@@ -148,7 +148,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-12-15 08:50:47"
+            "time": "2016-12-16 02:05:31"
         },
         {
             "name": "andatech-hrm/yii2-person",
@@ -861,46 +861,6 @@
             "time": "2013-12-10T17:49:58+00:00"
         },
         {
-            "name": "creocoder/yii2-nested-sets",
-            "version": "0.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/creocoder/yii2-nested-sets.git",
-                "reference": "cb8635a459b6246e5a144f096b992dcc30cf9954"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/creocoder/yii2-nested-sets/zipball/cb8635a459b6246e5a144f096b992dcc30cf9954",
-                "reference": "cb8635a459b6246e5a144f096b992dcc30cf9954",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "creocoder\\nestedsets\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Alexander Kochetov",
-                    "email": "creocoder@gmail.com"
-                }
-            ],
-            "description": "The nested sets behavior for the Yii framework",
-            "keywords": [
-                "nested sets",
-                "yii2"
-            ],
-            "time": "2015-01-27T10:53:51+00:00"
-        },
-        {
             "name": "dmstr/yii2-adminlte-asset",
             "version": "2.3.4",
             "source": {
@@ -1457,109 +1417,6 @@
             "time": "2014-11-10T18:09:37+00:00"
         },
         {
-            "name": "kartik-v/yii2-tree-manager",
-            "version": "v1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/yii2-tree-manager.git",
-                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
-                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
-                "shasum": ""
-            },
-            "require": {
-                "creocoder/yii2-nested-sets": "~0.9",
-                "kartik-v/yii2-widget-activeform": "~1.4"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "kartik\\tree\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kartik Visweswaran",
-                    "email": "kartikv2@gmail.com",
-                    "homepage": "http://www.krajee.com/"
-                }
-            ],
-            "description": "An enhanced tree management module with tree node selection and manipulation using nested sets.",
-            "homepage": "https://github.com/kartik-v/yii2-tree-manager",
-            "keywords": [
-                "ajax",
-                "bootstrap",
-                "hierarchy",
-                "jquery",
-                "krajee",
-                "nested",
-                "nestedset",
-                "set",
-                "tree",
-                "treeview"
-            ],
-            "time": "2015-12-27T18:48:51+00:00"
-        },
-        {
-            "name": "kartik-v/yii2-widget-activeform",
-            "version": "v1.4.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
-                "reference": "53c2f877f12ba0b79e8346b6cae50cbba2bcfc69"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/53c2f877f12ba0b79e8346b6cae50cbba2bcfc69",
-                "reference": "53c2f877f12ba0b79e8346b6cae50cbba2bcfc69",
-                "shasum": ""
-            },
-            "require": {
-                "kartik-v/yii2-krajee-base": "~1.7"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "kartik\\form\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kartik Visweswaran",
-                    "email": "kartikv2@gmail.com",
-                    "homepage": "http://www.krajee.com/"
-                }
-            ],
-            "description": "Enhanced Yii2 active-form and active-field with full bootstrap styling support (sub repo split from yii2-widgets).",
-            "homepage": "https://github.com/kartik-v/yii2-widget-activeform",
-            "keywords": [
-                "activefield",
-                "activeform",
-                "extension",
-                "field",
-                "form",
-                "widget",
-                "yii2"
-            ],
-            "time": "2016-04-27T18:38:05+00:00"
-        },
-        {
             "name": "kuakling/yii2-lobibox",
             "version": "dev-master",
             "source": {
@@ -1657,6 +1514,54 @@
                 "yii"
             ],
             "time": "2016-05-20T23:38:13+00:00"
+        },
+        {
+            "name": "mdmsoft/yii2-autonumber",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdmsoft/yii2-autonumber.git",
+                "reference": "0a2d75907ef0fd465bc6115a2b90ec6ee0e39408"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-autonumber/zipball/0a2d75907ef0fd465bc6115a2b90ec6ee0e39408",
+                "reference": "0a2d75907ef0fd465bc6115a2b90ec6ee0e39408",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "mdm\\autonumber\\Bootstrap",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdm\\autonumber\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Misbahul D Munir",
+                    "email": "misbahuldmunir@gmail.com"
+                }
+            ],
+            "description": "Auto number extension for the Yii framework",
+            "keywords": [
+                " autonumber",
+                " behavior",
+                " extension",
+                "yii2"
+            ],
+            "time": "2016-02-06 03:48:58"
         },
         {
             "name": "mongosoft/yii2-upload-behavior",
@@ -2584,6 +2489,46 @@
             "time": "2016-08-29T22:49:25+00:00"
         },
         {
+            "name": "creocoder/yii2-nested-sets",
+            "version": "0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/creocoder/yii2-nested-sets.git",
+                "reference": "cb8635a459b6246e5a144f096b992dcc30cf9954"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/creocoder/yii2-nested-sets/zipball/cb8635a459b6246e5a144f096b992dcc30cf9954",
+                "reference": "cb8635a459b6246e5a144f096b992dcc30cf9954",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "creocoder\\nestedsets\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Alexander Kochetov",
+                    "email": "creocoder@gmail.com"
+                }
+            ],
+            "description": "The nested sets behavior for the Yii framework",
+            "keywords": [
+                "nested sets",
+                "yii2"
+            ],
+            "time": "2015-01-27T10:53:51+00:00"
+        },
+        {
             "name": "doctrine/instantiator",
             "version": "1.0.5",
             "source": {
@@ -2742,6 +2687,109 @@
                 "uri"
             ],
             "time": "2016-06-24T23:00:38+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-tree-manager",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-tree-manager.git",
+                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-tree-manager/zipball/0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
+                "reference": "0fd506de3ef0c73ec8a3f0c9267ed8353f5e9f89",
+                "shasum": ""
+            },
+            "require": {
+                "creocoder/yii2-nested-sets": "~0.9",
+                "kartik-v/yii2-widget-activeform": "~1.4"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\tree\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "An enhanced tree management module with tree node selection and manipulation using nested sets.",
+            "homepage": "https://github.com/kartik-v/yii2-tree-manager",
+            "keywords": [
+                "ajax",
+                "bootstrap",
+                "hierarchy",
+                "jquery",
+                "krajee",
+                "nested",
+                "nestedset",
+                "set",
+                "tree",
+                "treeview"
+            ],
+            "time": "2015-12-27T18:48:51+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-widget-activeform",
+            "version": "v1.4.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-widget-activeform.git",
+                "reference": "53c2f877f12ba0b79e8346b6cae50cbba2bcfc69"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-widget-activeform/zipball/53c2f877f12ba0b79e8346b6cae50cbba2bcfc69",
+                "reference": "53c2f877f12ba0b79e8346b6cae50cbba2bcfc69",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "~1.7"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "kartik\\form\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Enhanced Yii2 active-form and active-field with full bootstrap styling support (sub repo split from yii2-widgets).",
+            "homepage": "https://github.com/kartik-v/yii2-widget-activeform",
+            "keywords": [
+                "activefield",
+                "activeform",
+                "extension",
+                "field",
+                "form",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-04-27T18:38:05+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",

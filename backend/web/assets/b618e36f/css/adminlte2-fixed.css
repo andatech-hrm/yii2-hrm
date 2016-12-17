@@ -1,0 +1,37 @@
+.widget-user .widget-user-header{
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.widget-user .widget-user-header{
+    height: 200px;
+}
+.widget-user .widget-user-image{
+    top: 145px;
+}
+.widget-user .btn-change-photo{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+}
+.widget-user .widget-user-image:hover .btn-change-photo,
+.widget-user .widget-user-header:hover .btn-change-photo{
+    display: inherit;
+}
+.widget-user .modal-change-photo input[type="file"]{
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.widget-user .widget-user-username,
+.widget-user .widget-user-desc{
+    font-weight: bold;
+    text-shadow: 0 0 3px #000;
+}
+.widget-user .widget-user-image>img{
+    -moz-box-shadow: 0 0 5px grey;
+    -webkit-box-shadow: 0 0 5px grey;
+    box-shadow: 0 0 5px grey;
+}
