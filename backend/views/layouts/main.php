@@ -68,12 +68,12 @@ $userInfo = $user->profile->getResultInfo();
                             [
                                 //"activeCssClass" => "current-page",
                                 "items" => [
-                                    ["label" => "Home", "url" => ["/"], "icon" => "home"],
-                                    ["label" => "Person", "url" => '#', "icon" => "users", "items" => [
+                                    ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"],
+                                    ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
                                          ["label" => "People", "url" => ["/person/default/index"], ['itemOptions' => ['class' => 'abcd']]],
                                          ["label" => "Position", "url" => ["/person/position/index"]],
                                     ]],
-                                    ["label" => "Structure", "url" => ["/structure"], "icon" => "files-o"],
+                                    ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure"], "icon" => "sitemap"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
                                         "label" => "Widgets",
@@ -176,7 +176,7 @@ $userInfo = $user->profile->getResultInfo();
         </div>
 
         <!-- top navigation -->
-        <div class="top_nav">
+        <div class="top_nav hidden-print">
 
             <div class="nav_menu">
                 <nav class="" role="navigation">
@@ -292,7 +292,9 @@ $userInfo = $user->profile->getResultInfo();
         <div class="right_col" role="main">
                 <div class="page-title">
                     <div class="title_left">
-                        <h3><?= ucfirst($this->context->module->id); ?></h3>
+                      <!-- <h3><?= ucfirst($this->context->module->id); ?></h3> -->
+                      <h3><?= Yii::t('andahrm',ucfirst($this->context->module->id)); ?></h3>                    
+                      
                     </div>
                     <div class="title_right">
                         <div class="pull-right">
