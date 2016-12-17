@@ -22,6 +22,8 @@ Thumbs.db
 
 # uploads dir
 /uploads
+/frontend/web/assets
+/backend/web/assets
 
 # composer itself is not needed
 composer.phar
