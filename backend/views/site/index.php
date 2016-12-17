@@ -8,7 +8,8 @@ $this->title = 'My Yii Application';
 
     <div class="jumbotron">
         <h1>Congratulations!</h1>
-
+        <?php echo Yii::t('app', 'Create Child'); ?><hr />
+    <?php print_r(Yii::$app->i18n->translations); ?>
         <p class="lead">You have successfully created your Yii-powered application.</p>
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>

@@ -11,6 +11,7 @@ return [
             // 'i18n' => []
         ]
     ],
+    'language' => 'th-TH',
     'components' => [
         'cache' => [
             'class' => 'yii\caching\FileCache',
@@ -20,9 +21,25 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'app' => [
+                '*' => [
                     'class' => 'yii\i18n\DbMessageSource',
-                    'sourceLanguage' => 'en-US',
+                    //'db' => 'db',
+                    'sourceLanguage' => 'en-US', // Developer language
+                    'sourceMessageTable' => '{{%language_source}}',
+                    'messageTable' => '{{%language_translate}}',
+                    'cachingDuration' => 86400,
+                    'enableCaching' => false,
+                    //'forceTranslation' => true,
+                ],
+            'app' => [
+                    'class' => 'yii\i18n\DbMessageSource',
+                    //'db' => 'db',
+                    'sourceLanguage' => 'en-US', // Developer language
+                    'sourceMessageTable' => '{{%language_source}}',
+                    'messageTable' => '{{%language_translate}}',
+                    'cachingDuration' => 86400,
+                    'enableCaching' => false,
+                    //'forceTranslation' => true,
                 ],
             ],
         ],
