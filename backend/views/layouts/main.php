@@ -8,7 +8,7 @@
 use yii\helpers\Html;
 
 $bundle = yiister\gentelella\assets\Asset::register($this);
-backend\assets\AppAsset::register($this);
+$asset = backend\assets\AppAsset::register($this);
 
 $user = Yii::$app->user->identity;
 $userInfo = $user->profile->getResultInfo();
@@ -21,6 +21,7 @@ $userInfo = $user->profile->getResultInfo();
     <meta charset="<?= Yii::$app->charset ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="<?=$asset->baseUrl?>/images/favicon.ico" rel="shortcut icon">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -40,7 +41,11 @@ $userInfo = $user->profile->getResultInfo();
             <div class="left_col scroll-view">
 
                 <div class="navbar nav_title" style="border: 0;">
-                    <a href="/" class="site_title"><i class="fa fa-users"></i> <span><?= Yii::$app->name; ?></span></a>
+                    <a href="/" class="site_title">
+                      <!--<i class="fa fa-users"></i>  -->
+                      <?=Html::img($asset->baseUrl.'/images/logo.png',['width'=>'37'])?>
+                      <span><?= Yii::$app->name; ?></span>
+                  </a>
                 </div>
                 <div class="clearfix"></div>
 
@@ -50,7 +55,7 @@ $userInfo = $user->profile->getResultInfo();
                         <img src="<?= $userInfo->avatar; ?>" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
-                        <span>Welcome,</span>
+                        <span><?=Yii::t('app','Welcome')?>,</span>
                         <h2><?= $userInfo->fullname; ?></h2>
                     </div>
                 </div>
@@ -290,7 +295,7 @@ $userInfo = $user->profile->getResultInfo();
 
         <!-- page content -->
         <div class="right_col" role="main">
-                <div class="page-title">
+                <div class="page-title hidden-print">
                     <div class="title_left">
                       <!-- <h3><?= ucfirst($this->context->module->id); ?></h3> -->
                       <h3><?= Yii::t('andahrm',ucfirst($this->context->module->id)); ?></h3>                    
