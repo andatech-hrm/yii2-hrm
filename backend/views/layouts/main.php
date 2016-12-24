@@ -74,11 +74,13 @@ $userInfo = $user->profile->getResultInfo();
                                 //"activeCssClass" => "current-page",
                                 "items" => [
                                     ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"],
+                                    ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/person/default/index"], "icon" => "user-circle-o"],
                                     ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
-                                         ["label" => "People", "url" => ["/person/default/index"], ['itemOptions' => ['class' => 'abcd']]],
+                                         ["label" => "People", "url" => ["/person/people/index"], ['itemOptions' => ['class' => 'abcd']]],
                                          ["label" => "Position", "url" => ["/person/position/index"]],
                                     ]],
                                     ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure"], "icon" => "sitemap"],
+                                    ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave"], "icon" => "sitemap"],
                                     ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
                                         "label" => "Widgets",
@@ -352,7 +354,9 @@ $userInfo = $user->profile->getResultInfo();
 </div>
 <!-- /footer content -->
 <?php 
-$this->registerJs("$('form').submit(function(){
+$this->registerJs("
+//$('form').submit(function(){
+$(document).on('submit', 'form', function(){
      var submitBtns = $(this).find(':submit');
      submitBtns.find('.fa').attr('class', 'fa fa-spinner fa-spin');
      submitBtns.addClass('disabled');
