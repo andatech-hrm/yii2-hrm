@@ -160,7 +160,7 @@ $userInfo = $user->profile->getResultInfo();
                         ?>
                     </div>
 
-                </div>
+               </div>
                 <!-- /sidebar menu -->
 
                 <!-- /menu footer buttons -->
