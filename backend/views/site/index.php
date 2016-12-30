@@ -1,54 +1,82 @@
 <?php
 
+
+use andahrm\structure\models\Structure;
+andahrm\structure\assets\JqueryOrg::register($this);
 /* @var $this yii\web\View */
 //echo Yii::$app->request->userIP;
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
+<?php
+$request = Yii::$app->request;
+$profile = Yii::$app->user->identity->profile;
+$module = $this->context->module->id;
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-        <?php echo Yii::t('app', 'Create Child'); ?><hr />
-    <?php print_r(Yii::$app->i18n->translations); ?>
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+?>
+<div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+        <div class="x_panel">
+            <div class="x_title">
+                <h2>User Report <small>Activity report</small></h2>
+                <div class="clearfix"></div>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+            <div class="x_content">
+               
+                        <div class="profile_img">
+                            <img class="img-responsive avatar-view" src="<?= $profile->resultInfo->avatar; ?>" alt="Avatar" title="Change the avatar">
+                        </div>
+                        <h3><?= $profile->fullname; ?></h3>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                        <ul class="list-unstyled user_data">
+                            <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
+                            </li>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
+                            <li>
+                                <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
+                            </li>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                            <li class="m-top-xs">
+                                <i class="fa fa-external-link user-profile-icon"></i>
+                                <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+                            </li>
+                        </ul>
+                   
             </div>
         </div>
-
+    </div>
+    <div class="col-md-9 col-sm-9 col-xs-12">
+      
     </div>
 </div>
+
+<div class="x_panel">
+  <div class="x_title">
+      <h2>โครงการองค์กร <small>โองการบริหารส่วนจังหวัดยะลา</small></h2>
+      <div class="clearfix"></div>
+  </div>
+  <div class="x_content">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+          <div id="content" style="margin-bottom:30px;">
+            <div id="mainOrg">
+            <?=Structure::getOrg()?>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php
+  $this->registerJs('
+    $(function() {
+            $("#organisation").orgChart({
+              container: $("#mainOrg"),
+              interactive: true,
+              fade: true,
+              speed: "slow",
+              stack    : true, 
+              depth    : 3
+            });
+    });
+');
