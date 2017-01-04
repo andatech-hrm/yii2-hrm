@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f870b73c634b1c8a494589583e175fd2",
+    "content-hash": "857cc3580f91e02c0574991d5e2bc569",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -96,18 +96,64 @@
             "time": "2016-12-10 09:12:09"
         },
         {
+            "name": "andatech-hrm/yii2-edoc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-edoc.git",
+                "reference": "7c5754c35241702fc62e861f54177d02591ddc58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-edoc/zipball/7c5754c35241702fc62e861f54177d02591ddc58",
+                "reference": "7c5754c35241702fc62e861f54177d02591ddc58",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\edoc\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Edoc",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-01-03 02:23:26"
+        },
+        {
             "name": "andatech-hrm/yii2-leave",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/andatech-hrm/yii2-leave.git",
-                "reference": "35084ae9e8d940db76bf376057c240882ab0ad83"
+                "reference": "51f85bc2c2b296345cf0572a95821fc641736e66"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andatech-hrm/yii2-leave/zipball/35084ae9e8d940db76bf376057c240882ab0ad83",
-                "reference": "35084ae9e8d940db76bf376057c240882ab0ad83",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-leave/zipball/51f85bc2c2b296345cf0572a95821fc641736e66",
+                "reference": "51f85bc2c2b296345cf0572a95821fc641736e66",
                 "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-field-range": "*"
             },
             "type": "yii2-extension",
             "autoload": {
@@ -131,7 +177,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2016-12-24 05:18:14"
+            "time": "2016-12-30 20:12:57"
         },
         {
             "name": "andatech-hrm/yii2-organizational-structure",
@@ -236,6 +282,92 @@
                 "yii2"
             ],
             "time": "2016-12-10 08:42:29"
+        },
+        {
+            "name": "andatech-hrm/yii2-position-salary",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-position-salary.git",
+                "reference": "76c9584b85e8bcf695bfa3e25d25bbb99d10422c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-position-salary/zipball/76c9584b85e8bcf695bfa3e25d25bbb99d10422c",
+                "reference": "76c9584b85e8bcf695bfa3e25d25bbb99d10422c",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\positionSalary\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Organizational Structure",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-01-03 01:17:07"
+        },
+        {
+            "name": "andatech-hrm/yii2-profile",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-profile.git",
+                "reference": "c28bf6c0454b9ce2e5af018853453eec38bf4b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-profile/zipball/c28bf6c0454b9ce2e5af018853453eec38bf4b75",
+                "reference": "c28bf6c0454b9ce2e5af018853453eec38bf4b75",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\profile\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Profile",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-01-04 03:00:31"
         },
         {
             "name": "andatech/yii2-core",
@@ -1485,6 +1617,57 @@
                 "yii2"
             ],
             "time": "2016-04-18T16:54:14+00:00"
+        },
+        {
+            "name": "kartik-v/yii2-field-range",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-field-range.git",
+                "reference": "5f7f34977efb33c55614b2c6f5be466be7e0c1e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-field-range/zipball/5f7f34977efb33c55614b2c6f5be466be7e0c1e6",
+                "reference": "5f7f34977efb33c55614b2c6f5be466be7e0c1e6",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\field\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Easily manage Yii 2 ActiveField ranges (from/to) with Bootstrap 3 addons markup and more",
+            "homepage": "https://github.com/kartik-v/yii2-field-range",
+            "keywords": [
+                "addon",
+                "bootstrap",
+                "bootstrap 3",
+                "date",
+                "extension",
+                "field-range",
+                "from",
+                "range",
+                "to",
+                "widget",
+                "yii2"
+            ],
+            "time": "2016-09-04 09:29:14"
         },
         {
             "name": "kartik-v/yii2-grid",
@@ -5836,7 +6019,10 @@
         "andatech-hrm/yii2-app-setting": 20,
         "kuakling/yii2-lobibox": 20,
         "kartik-v/yii2-grid": 20,
-        "andatech-hrm/yii2-leave": 20
+        "andatech-hrm/yii2-leave": 20,
+        "andatech-hrm/yii2-position-salary": 20,
+        "andatech-hrm/yii2-edoc": 20,
+        "andatech-hrm/yii2-profile": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

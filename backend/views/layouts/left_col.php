@@ -46,7 +46,10 @@ use yii\helpers\Html;
                                          ["label" => "Position", "url" => ["/person/position/index"]],
                                     ]],
                                     ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure"], "icon" => "sitemap"],
+                                    ["label" => Yii::t('andahrm','Position Salary'), "url" => ["/position-salary"], "icon" => "usd"],
                                     ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave"], "icon" => "calendar"],
+                          
+                                    ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc"], "icon" => "book"],
                                     /*["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
                                         "label" => "Widgets",

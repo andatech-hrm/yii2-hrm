@@ -32,7 +32,10 @@
         "kartik-v/yii2-widgets": "*",
         "yiisoft/yii2-imagine": "^2.1",
         "maxmirazh33/yii2-uploadable-cropable-image": "*",
-        "andatech-hrm/yii2-leave": "dev-master"
+        "andatech-hrm/yii2-leave": "dev-master",
+        "andatech-hrm/yii2-position-salary": "dev-master",
+        "andatech-hrm/yii2-edoc": "dev-master",
+        "andatech-hrm/yii2-profile": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
