@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "857cc3580f91e02c0574991d5e2bc569",
+    "content-hash": "2b4bce603b9d7b1e24c954dd5687aa73",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -3041,16 +3041,16 @@
         },
         {
             "name": "mongosoft/yii2-upload-behavior",
-            "version": "0.1.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mongosoft/yii2-upload-behavior.git",
-                "reference": "dca58ec2252d37fd941e6599735dfaf63a48c911"
+                "url": "https://github.com/mohorev/yii2-upload-behavior.git",
+                "reference": "eb3ba838337900fcb8a852b11a83d873f6554139"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mongosoft/yii2-upload-behavior/zipball/dca58ec2252d37fd941e6599735dfaf63a48c911",
-                "reference": "dca58ec2252d37fd941e6599735dfaf63a48c911",
+                "url": "https://api.github.com/repos/mohorev/yii2-upload-behavior/zipball/eb3ba838337900fcb8a852b11a83d873f6554139",
+                "reference": "eb3ba838337900fcb8a852b11a83d873f6554139",
                 "shasum": ""
             },
             "require": {
@@ -3090,7 +3090,7 @@
                 "upload",
                 "yii2"
             ],
-            "time": "2015-08-27T15:48:02+00:00"
+            "time": "2016-05-26T09:00:57+00:00"
         },
         {
             "name": "phpoffice/phpexcel",
@@ -3352,6 +3352,49 @@
                 "yii2-nested-set-behavior"
             ],
             "time": "2014-12-01 10:58:31"
+        },
+        {
+            "name": "yii2assets/yii2-pdfjs",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Yii2Assets/yii2-pdfjs.git",
+                "reference": "99afd9728b80460bb186ac2d86eb71da05a139e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Yii2Assets/yii2-pdfjs/zipball/99afd9728b80460bb186ac2d86eb71da05a139e3",
+                "reference": "99afd9728b80460bb186ac2d86eb71da05a139e3",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii2assets\\pdfjs\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Sathit Seethaphon",
+                    "email": "dixonsatit@gmail.com"
+                }
+            ],
+            "description": "Yii2 Extension  pdf.js Portable Document Format (PDF) viewer ",
+            "keywords": [
+                "PDF Reader",
+                "extension",
+                "pdf",
+                "pdfjs",
+                "yii2"
+            ],
+            "time": "2016-07-22T15:25:27+00:00"
         },
         {
             "name": "yiisoft/yii2",

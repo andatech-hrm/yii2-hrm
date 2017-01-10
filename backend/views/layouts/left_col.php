@@ -40,13 +40,13 @@ use yii\helpers\Html;
                                 //"activeCssClass" => "current-page",
                                 "items" => [
                                     ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"],
-                                    ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/person/default/index"], "icon" => "user-circle-o"],
+                                    ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/profile"], "icon" => "user-circle-o"],
                                     ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
-                                         ["label" => "People", "url" => ["/person/people/index"], ['itemOptions' => ['class' => 'abcd']]],
+                                         ["label" => "Persons", "url" => ["/person/default"], ['itemOptions' => ['class' => 'abcd']]],
                                          ["label" => "Position", "url" => ["/person/position/index"]],
                                     ]],
                                     ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure"], "icon" => "sitemap"],
-                                    ["label" => Yii::t('andahrm','Position Salary'), "url" => ["/position-salary"], "icon" => "usd"],
+                                    ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary"], "icon" => "usd"],
                                     ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave"], "icon" => "calendar"],
                           
                                     ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc"], "icon" => "book"],

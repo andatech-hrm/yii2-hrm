@@ -1,0 +1,1 @@
+{"template":"default","enableI18N":"1","messageCategory":"andahrm\/person","ns":"andahrm\\person\\models","db":"db","baseClass":"yii\\db\\ActiveRecord","generateRelations":"all","generateLabelsFromComments":"1","queryNs":"andahrm\\person\\models","queryBaseClass":"yii\\db\\ActiveQuery"}

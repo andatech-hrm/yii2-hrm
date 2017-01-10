@@ -216,6 +216,8 @@ $userInfo = $user->profile->getResultInfo();
 </div>
 <!-- /footer content -->
 <?php 
+$currentMenu = (isset($this->params['current-menu'])) ? $this->params['current-menu'] : Yii::$app->request->baseUrl.'/'.$this->context->module->id."/".$this->context->id;
+
 $this->registerJs("
 //$('form').submit(function(){
 $(document).on('submit', 'form', function(){
@@ -225,7 +227,7 @@ $(document).on('submit', 'form', function(){
 });
 
 var \$SIDEBAR_MENU = $('#sidebar-menu');
-var actionIndex = '".Yii::$app->request->baseUrl.'/'.$this->context->module->id."/".$this->context->id."/index';
+var actionIndex = '".$currentMenu."';
 \$SIDEBAR_MENU.find('a[href=\"'+actionIndex+'\"]').parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
 
 \$('a').click(function(){
@@ -235,6 +237,22 @@ var actionIndex = '".Yii::$app->request->baseUrl.'/'.$this->context->module->id.
     }
 });
 ");
+?>
+    
+    
+<?php
+$this->registerCss("
+ul.bar_tabs > li.active a{
+    padding-bottom: 12px;
+}
+ul.bar_tabs{
+    margin-bottom:0;
+}
+.tab-content{
+    border: 1px solid #E6E9ED;
+    padding:10px;
+    background-color:#fff;
+}");
 ?>
 <?php $this->endBody(); ?>
 </body>

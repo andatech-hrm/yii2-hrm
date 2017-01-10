@@ -35,7 +35,9 @@
         "andatech-hrm/yii2-leave": "dev-master",
         "andatech-hrm/yii2-position-salary": "dev-master",
         "andatech-hrm/yii2-edoc": "dev-master",
-        "andatech-hrm/yii2-profile": "dev-master"
+        "andatech-hrm/yii2-profile": "dev-master",
+        "mongosoft/yii2-upload-behavior": "*",
+        "yii2assets/yii2-pdfjs": ">=1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
