@@ -1,6 +1,9 @@
 <?php
 use yii\helpers\Html;
-
+use mdm\admin\components\Helper;
+use yiister\gentelella\widgets\Menu;
+//use dmstr\widgets\Menu;
+use yii\helpers\ArrayHelper;
 ?>
 
 
@@ -34,23 +37,23 @@ use yii\helpers\Html;
 
                     <div class="menu_section">
                         <h3><?= current(($userInfo->roles)); ?></h3>
-                        <?=
-                        \yiister\gentelella\widgets\Menu::widget(
-                            [
-                                //"activeCssClass" => "current-page",
-                                "items" => [
-                                    ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"],
-                                    ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/profile"], "icon" => "user-circle-o"],
-                                    ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
+                        <?php
+                      $menuItemsSelf = [];
+                      $menuItemsSelf[] = ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"];
+                      $menuItemsSelf[] = ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/profile/"], "icon" => "user-circle-o"];
+                      $menuItems = [];
+                      /*
+                      $menuItems[] = ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
                                          ["label" => "Persons", "url" => ["/person/default"], ['itemOptions' => ['class' => 'abcd']]],
                                          ["label" => "Position", "url" => ["/person/position/index"]],
-                                    ]],
-                                    ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure"], "icon" => "sitemap"],
-                                    ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary"], "icon" => "usd"],
-                                    ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave"], "icon" => "calendar"],
-                          
-                                    ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc"], "icon" => "book"],
-                                    /*["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
+                                    ]];
+                      */
+                      $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/default"],"icon" => "users"];
+                      $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
+                     $menuItems[] =  ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "usd"];
+                     $menuItems[] = ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
+                     $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "book"];
+                                      /* $menuItems[] = ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                                     [
                                         "label" => "Widgets",
                                         "icon" => "th",
@@ -109,7 +112,24 @@ use yii\helpers\Html;
                                             ],
                                         ],
                                     ],*/
-                                ],
+                      
+                      
+                         //$menuItems = Helper::filter($menuItems);
+//                     $newMenu = [];
+//                     foreach($menuItems as $k=>$menu){
+//                       $newMenu[$k]=$menu;
+//                       $newMenu[$k]['url'][0] = rtrim($menu['url'][0], "/");
+//                     }
+//                     $menuItems=$newMenu;
+                      
+                      
+                        $menuItems=ArrayHelper::merge($menuItemsSelf,$menuItems);
+                        echo Menu::widget(
+                            [
+                             //'options' => ['class' => 'nav side-menu'],
+                             //'encodeLabels' => true,
+                                //"activeCssClass" => "current-page",
+                                "items" => $menuItems,
                             ]
                         )
                         ?>

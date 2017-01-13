@@ -12,7 +12,7 @@ return [
     'controllerNamespace' => 'backend\controllers',
     'bootstrap' => [
         'log',
-//         'setting',
+        'setting',
     ],
     'modules' => require __DIR__ . '/modules.php',
     'homeUrl' => '/office',

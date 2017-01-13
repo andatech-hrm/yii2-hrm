@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2b4bce603b9d7b1e24c954dd5687aa73",
+    "content-hash": "5f6877343facd512bc617cb6ef124d15",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -1279,6 +1279,46 @@
                 "image processing"
             ],
             "time": "2015-09-19T16:54:05+00:00"
+        },
+        {
+            "name": "istvan-ujjmeszaros/bootstrap-duallistbox",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/istvan-ujjmeszaros/bootstrap-duallistbox.git",
+                "reference": "4ebd0727b27425b96204cb0dde1d8ce564676403"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/istvan-ujjmeszaros/bootstrap-duallistbox/zipball/4ebd0727b27425b96204cb0dde1d8ce564676403",
+                "reference": "4ebd0727b27425b96204cb0dde1d8ce564676403",
+                "shasum": ""
+            },
+            "suggest": {
+                "components/jquery": "2.0.*",
+                "twbs/bootstrap": "3.*"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "István Ujj-Mészáros",
+                    "homepage": "https://github.com/istvan-ujjmeszaros"
+                }
+            ],
+            "description": "A responsive dual listbox widget optimized for Twitter Bootstrap. It works on all modern browsers and on touch devices.",
+            "homepage": "http://www.virtuosoft.eu/code/bootstrap-duallistbox/",
+            "keywords": [
+                "bootstrap",
+                "bootstrap duallistbox",
+                "bootstrap select",
+                "duallistbox",
+                "select"
+            ],
+            "time": "2016-09-06 13:18:25"
         },
         {
             "name": "karpoff/yii2-crop-image-upload",
@@ -3040,6 +3080,51 @@
             "time": "2016-02-06 03:48:58"
         },
         {
+            "name": "mdmsoft/yii2-format-converter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mdmsoft/yii2-format-converter.git",
+                "reference": "b3793b341d919ee65bd4bab456872d6525030507"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mdmsoft/yii2-format-converter/zipball/b3793b341d919ee65bd4bab456872d6525030507",
+                "reference": "b3793b341d919ee65bd4bab456872d6525030507",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "mdm\\converter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Misbahul D Munir",
+                    "email": "misbahuldmunir@gmail.com"
+                }
+            ],
+            "description": "Yii2 AR attribute converter",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2016-05-27 05:13:48"
+        },
+        {
             "name": "mongosoft/yii2-upload-behavior",
             "version": "dev-master",
             "source": {
@@ -3200,6 +3285,51 @@
                 "yii"
             ],
             "time": "2016-10-25T15:14:55+00:00"
+        },
+        {
+            "name": "softark/yii2-dual-listbox",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/softark/yii2-dual-listbox.git",
+                "reference": "e2d46973271449043b8faa248c9c8f83afe895cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/softark/yii2-dual-listbox/zipball/e2d46973271449043b8faa248c9c8f83afe895cd",
+                "reference": "e2d46973271449043b8faa248c9c8f83afe895cd",
+                "shasum": ""
+            },
+            "require": {
+                "istvan-ujjmeszaros/bootstrap-duallistbox": "*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "softark\\duallistbox\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nobuo Kihara",
+                    "email": "softark@gmail.com",
+                    "homepage": "http://softark.net"
+                }
+            ],
+            "description": "Dual Listbox Widget for Yii 2",
+            "keywords": [
+                "dual-listbox",
+                "duallistbox",
+                "widget",
+                "yii 2",
+                "yii2"
+            ],
+            "time": "2016-01-12 23:14:58"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -6065,7 +6195,8 @@
         "andatech-hrm/yii2-leave": 20,
         "andatech-hrm/yii2-position-salary": 20,
         "andatech-hrm/yii2-edoc": 20,
-        "andatech-hrm/yii2-profile": 20
+        "andatech-hrm/yii2-profile": 20,
+        "softark/yii2-dual-listbox": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

@@ -37,7 +37,9 @@
         "andatech-hrm/yii2-edoc": "dev-master",
         "andatech-hrm/yii2-profile": "dev-master",
         "mongosoft/yii2-upload-behavior": "*",
-        "yii2assets/yii2-pdfjs": ">=1.0"
+        "yii2assets/yii2-pdfjs": ">=1.0",
+        "mdmsoft/yii2-format-converter": "~1.0",
+        "softark/yii2-dual-listbox": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
