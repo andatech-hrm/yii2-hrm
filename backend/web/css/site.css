@@ -126,7 +126,15 @@ a.desc:after {
 }
 
 /******Update by Madone******/
-
+.text-dashed{
+  border-bottom:1px dashed #888;
+  padding:0 8px 0 3px;
+  font-weight:300;
+}
+.text-dotted{
+  border-bottom:1px dotted #888;
+  padding:0 8px 0 3px;
+}
 .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
     background: none;
     color: #ccc;

@@ -41,14 +41,12 @@ use yii\helpers\ArrayHelper;
                       $menuItemsSelf = [];
                       $menuItemsSelf[] = ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"];
                       $menuItemsSelf[] = ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/profile/"], "icon" => "user-circle-o"];
+                      
+                      
                       $menuItems = [];
-                      /*
-                      $menuItems[] = ["label" => Yii::t('andahrm','Person'), "url" => '#', "icon" => "users", "items" => [
-                                         ["label" => "Persons", "url" => ["/person/default"], ['itemOptions' => ['class' => 'abcd']]],
-                                         ["label" => "Position", "url" => ["/person/position/index"]],
-                                    ]];
-                      */
-                      $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/default"],"icon" => "users"];
+                      if (Yii::$app->user->can('manage-person')){
+                      $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
+                      }
                       $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
                      $menuItems[] =  ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "usd"];
                      $menuItems[] = ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
@@ -114,7 +112,7 @@ use yii\helpers\ArrayHelper;
                                     ],*/
                       
                       
-                         //$menuItems = Helper::filter($menuItems);
+                         $menuItems = Helper::filter($menuItems);
 //                     $newMenu = [];
 //                     foreach($menuItems as $k=>$menu){
 //                       $newMenu[$k]=$menu;
