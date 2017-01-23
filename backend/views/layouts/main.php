@@ -252,6 +252,14 @@ ul.bar_tabs{
     border: 1px solid #E6E9ED;
     padding:10px;
     background-color:#fff;
+}
+.form-group{
+    position: relative;
+}
+.help-block{
+    position: absolute;
+    top: 0;
+    right: 5px;
 }");
 ?>
 <?php $this->endBody(); ?>

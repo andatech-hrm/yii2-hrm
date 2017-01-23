@@ -144,8 +144,16 @@ a.desc:after {
 .nav-md .container.body .col-md-3.left_col {
   z-index:1045;
 }
-.p-form-indent{
+
+/* ระบบลา */
+
+.font-thai-sarabun p{
+   line-height:28px;
+}
+.font-thai-sarabun .p-form-indent{
   text-indent:30px;
 }
+
+
 
 
