@@ -131,6 +131,10 @@ a.desc:after {
   padding:0 8px 0 3px;
   font-weight:300;
 }
+.width100{
+  width:100%;
+  display:inline-block;
+}
 .text-dotted{
   border-bottom:1px dotted #888;
   padding:0 8px 0 3px;
@@ -152,6 +156,18 @@ a.desc:after {
 }
 .font-thai-sarabun .p-form-indent{
   text-indent:30px;
+}
+
+
+/* fix jambo_table */
+table.jambo_table .filters{
+    background-color: #fff;
+}
+table.jambo_table thead{
+    color: #d9d9d9;
+}
+table.jambo_table thead a{
+    color: #fff;
 }
 
 

@@ -6,12 +6,14 @@
  */
 
 use yii\helpers\Html;
+use andahrm\person\PersonApi;
 
 $bundle = yiister\gentelella\assets\Asset::register($this);
 $asset = backend\assets\AppAsset::register($this);
 
 $user = Yii::$app->user->identity;
-$userInfo = $user->profile->getResultInfo();
+// $userInfo = $user->profile->getResultInfo();
+$person = PersonApi::instance($user->id);
 ?>
 <?php $this->beginPage(); ?>
 <!DOCTYPE html>
@@ -40,7 +42,7 @@ $userInfo = $user->profile->getResultInfo();
         <div class="col-md-3 left_col">
             <?=$this->render('left_col',[
                     'asset'=>$asset,
-                    'userInfo'=>$userInfo,
+                    'person'=>$person,
             ])?>
         </div>
 
@@ -56,7 +58,7 @@ $userInfo = $user->profile->getResultInfo();
                     <ul class="nav navbar-nav navbar-right">
                         <li class="">
                             <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                <img src="<?= $userInfo->avatar; ?>" alt=""><?= $userInfo->fullname; ?>
+                                <img src="<?= $person->getPhotoLast(); ?>" alt=""><?= $person->getFullname(); ?>
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
@@ -253,6 +255,7 @@ ul.bar_tabs{
     padding:10px;
     background-color:#fff;
 }
+/*
 .form-group{
     position: relative;
 }
@@ -260,7 +263,8 @@ ul.bar_tabs{
     position: absolute;
     top: 0;
     right: 5px;
-}");
+}*/
+");
 ?>
 <?php $this->endBody(); ?>
 </body>

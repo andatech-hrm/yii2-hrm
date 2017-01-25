@@ -53,6 +53,9 @@ return [
         'authManager' => [
             'class' => 'yii\rbac\DbManager', // or use 'yii\rbac\PhpManager'
         ],
+        'date' => [
+            'class' => 'andahrm\setting\components\Date'
+        ]
     ],
         'as access' => [
             'class' => 'mdm\admin\components\AccessControl',

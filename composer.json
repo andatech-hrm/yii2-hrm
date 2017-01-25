@@ -44,7 +44,9 @@
         "beastbytes/yii2-wizard": "^1.0",
         "drsdre/yii2-wizardwidget": "*",
         "wbraganca/yii2-dynamicform": "dev-master",
-        "andatech/yii2-dynamicform": "*"
+        "andatech/yii2-dynamicform": "*",
+        "andatech-hrm/yii2-development": "dev-master",
+        "kartik-v/yii2-date-range": "@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -21,11 +21,11 @@ use yii\helpers\ArrayHelper;
                 <!-- menu prile quick info -->
                 <div class="profile">
                     <div class="profile_pic">
-                        <img src="<?= $userInfo->avatar; ?>" alt="..." class="img-circle profile_img">
+                        <img src="<?= $person->getPhotoLast(); ?>" alt="..." class="img-circle profile_img">
                     </div>
                     <div class="profile_info">
                         <span><?=Yii::t('app','Welcome')?>,</span>
-                        <h2><?= $userInfo->fullname; ?></h2>
+                        <h2><?= $person->getFullname(); ?></h2>
                     </div>
                 </div>
                 <!-- /menu prile quick info -->
@@ -36,18 +36,19 @@ use yii\helpers\ArrayHelper;
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
                     <div class="menu_section">
-                        <h3><?= current(($userInfo->roles)); ?></h3>
+                        <h3><?= current($person->getRoles()); ?></h3>
                         <?php
                       $menuItemsSelf = [];
                       $menuItemsSelf[] = ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"];
-                      $menuItemsSelf[] = ["label" => Yii::$app->user->identity->profile->fullname, "url" => ["/profile/"], "icon" => "user-circle-o"];
+                      $menuItemsSelf[] = ["label" => $person->fullname, "url" => ["/profile/"], "icon" => "user-circle-o"];
                       
                       
                       $menuItems = [];
-                      if (Yii::$app->user->can('manage-person')){
-                      $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
-                      }
-                      $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
+                      //if (Yii::$app->user->can('manage-person')){
+                        $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
+                      //}
+                      $menuItems[] =  ["label" => Yii::t('andahrm','Development'), "url" => ["/development/"],"icon" => "line-chart"];
+                     $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
                      $menuItems[] =  ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "usd"];
                      $menuItems[] = ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
                      $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "book"];
@@ -112,7 +113,7 @@ use yii\helpers\ArrayHelper;
                                     ],*/
                       
                       
-                         $menuItems = Helper::filter($menuItems);
+                         //$menuItems = Helper::filter($menuItems);
 //                     $newMenu = [];
 //                     foreach($menuItems as $k=>$menu){
 //                       $newMenu[$k]=$menu;
