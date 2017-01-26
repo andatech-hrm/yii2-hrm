@@ -5037,3 +5037,3132 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1485403804.56
     'REQUEST_TIME' => 1485403804
 ]
+2017-01-26 11:30:50 [10.240.0.230][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '$formStepNum' (T_VARIABLE)' in /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php:52
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(25): ::spl_autoload_call()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#4 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#9 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#16 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-01-26 11:30:50 [10.240.0.230][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '51200'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485405050.448
+    'REQUEST_TIME' => 1485405050
+]
+2017-01-26 11:31:28 [10.240.0.230][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '++' (T_INC), expecting '}'' in /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php:55
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(25): ::spl_autoload_call()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#4 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#9 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#16 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-01-26 11:31:27 [10.240.0.230][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '51552'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485405087.717
+    'REQUEST_TIME' => 1485405087
+]
+2017-01-26 11:35:33 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected ';', expecting ']'' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#1 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#6 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#13 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+2017-01-26 11:35:33 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '58786'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485405333.337
+    'REQUEST_TIME' => 1485405333
+]
+2017-01-26 11:47:50 [10.240.1.16][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function isAttributeRequired() on a non-object' in /home/ubuntu/workspace/vendor/yiisoft/yii2/widgets/ActiveField.php:858
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/_form-person.php(10): yii\widgets\ActiveField->textInput()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#4 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_step-1.php(9): yii\base\View->render()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(86): yii\base\View->render()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#12 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#16 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#17 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#18 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#19 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#20 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#21 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#22 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#23 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#24 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+2017-01-26 11:47:49 [10.240.1.16][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.16'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '44854'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485406069.865
+    'REQUEST_TIME' => 1485406069
+]
+2017-01-26 11:48:48 [10.240.0.240][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function isAttributeRequired() on a non-object' in /home/ubuntu/workspace/vendor/yiisoft/yii2/widgets/ActiveField.php:858
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/_form-person.php(10): yii\widgets\ActiveField->textInput()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#4 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_step-1.php(9): yii\base\View->render()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(86): yii\base\View->render()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#12 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#16 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#17 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#18 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#19 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#20 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#21 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#22 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#23 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#24 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+2017-01-26 11:48:48 [10.240.0.240][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '38574'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485406128.025
+    'REQUEST_TIME' => 1485406128
+]
+2017-01-26 11:49:19 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function formName() on a non-object' in /home/ubuntu/workspace/vendor/yiisoft/yii2/helpers/BaseHtml.php:2126
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/helpers/BaseHtml.php(1330): yii\helpers\BaseHtml::activeInput()
+#1 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/_form-detail.php(17): yii\helpers\BaseHtml::activeHiddenInput()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#5 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(91): yii\base\View->render()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#9 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): ::unknown()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render()
+#14 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render()
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionCreate()
+#16 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#17 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#18 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#19 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#20 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#21 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#22 {main}
+2017-01-26 11:49:18 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '38024'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485406158.635
+    'REQUEST_TIME' => 1485406158
+]
+2017-01-26 11:54:50 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: andahrm\person\controllers\DefaultController::formStep' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Component.php:147
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(85): yii\base\Component->__get('formStep')
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, NULL)
+#4 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render('_form', Array)
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(andahrm\person\controllers\DefaultController))
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('wizard/create', Array, Object(andahrm\person\controllers\DefaultController))
+#9 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render('wizard/create', Array)
+#10 [internal function]: andahrm\person\controllers\DefaultController->actionCreate()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction('create', Array)
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('person/default/...', Array)
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2017-01-26 11:54:50 [10.240.1.14][1][bdh95k0gcd2cnao35c7e6tl2u5][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'advanced-frontend' => 'p4c10j84rpt8j5hhpavufme8q6'
+    '_csrf-frontend' => 'b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"pawLvOjPwbcltNhKMtPToICVkwyceNSN\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; advanced-frontend=p4c10j84rpt8j5hhpavufme8q6; _csrf-frontend=b9c5d94a3ff101107adf58607eef027802b5c163964b22fe0bcda159963def9ba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22pawLvOjPwbcltNhKMtPToICVkwyceNSN%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '40242'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485406490.731
+    'REQUEST_TIME' => 1485406490
+]
+2017-01-26 13:13:54 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:13:54 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/leave/default'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '50180'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485411234.716
+    'REQUEST_TIME' => 1485411234
+]
+2017-01-26 13:34:52 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:34:52 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '34014'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485412492.815
+    'REQUEST_TIME' => 1485412492
+]
+2017-01-26 13:45:40 [10.240.0.213][1][bh32hltf52v2a5k7jve4air5m5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "position-salary/calulator".' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php:531
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('position-salary...', Array)
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'à¹„à¸¡à¹ˆà¸à¸šà¸«à¸™à¹‰à¸²' in /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-26 13:45:40 [10.240.0.213][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.213'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '40612'
+    'REDIRECT_URL' => '/backend/web//position-salary/calulator'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/calulator'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413140.194
+    'REQUEST_TIME' => 1485413140
+]
+2017-01-26 13:48:31 [10.240.1.14][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/index.php:84
+2017-01-26 13:48:31 [10.240.1.14][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '41288'
+    'REDIRECT_URL' => '/backend/web//person'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413311.319
+    'REQUEST_TIME' => 1485413311
+]
+2017-01-26 13:54:57 [10.240.0.5][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-development/views/default/index.php:110
+2017-01-26 13:54:56 [10.240.0.5][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.5'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '47416'
+    'REDIRECT_URL' => '/backend/web//development'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413696.853
+    'REQUEST_TIME' => 1485413696
+]
+2017-01-26 13:55:00 [10.240.1.14][1][bh32hltf52v2a5k7jve4air5m5][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:55:00 [10.240.1.14][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'Helper' not found' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/layouts/main.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(396): yii\base\View->renderFile()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(382): yii\base\Controller->renderContent()
+#3 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/controllers/DefaultController.php(51): yii\base\Controller->render()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\positionSalary\controllers\DefaultController->actionIndex()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#8 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#10 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2017-01-26 13:55:00 [10.240.1.14][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '46080'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413700.022
+    'REQUEST_TIME' => 1485413700
+]
+2017-01-26 13:55:44 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:55:44 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '41814'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413744.613
+    'REQUEST_TIME' => 1485413744
+]
+2017-01-26 13:55:47 [10.240.1.16][1][bh32hltf52v2a5k7jve4air5m5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "position-salary/culculator".' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php:531
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('position-salary...', Array)
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'à¹„à¸¡à¹ˆà¸à¸šà¸«à¸™à¹‰à¸²' in /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-26 13:55:47 [10.240.1.16][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.16'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '47328'
+    'REDIRECT_URL' => '/backend/web//position-salary/culculator'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/culculator'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413747.98
+    'REQUEST_TIME' => 1485413747
+]
+2017-01-26 13:55:54 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:55:54 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '41918'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413754.18
+    'REQUEST_TIME' => 1485413754
+]
+2017-01-26 13:56:06 [10.240.0.240][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:56:06 [10.240.0.240][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '44320'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413766.53
+    'REQUEST_TIME' => 1485413766
+]
+2017-01-26 13:56:07 [10.240.0.5][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:56:06 [10.240.0.5][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.5'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '48252'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413766.98
+    'REQUEST_TIME' => 1485413766
+]
+2017-01-26 13:56:16 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:56:16 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/structure'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '42164'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413776.793
+    'REQUEST_TIME' => 1485413776
+]
+2017-01-26 13:57:51 [10.240.0.240][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:57:51 [10.240.0.240][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/structure'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '45856'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413871.207
+    'REQUEST_TIME' => 1485413871
+]
+2017-01-26 13:58:00 [10.240.0.240][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:58:00 [10.240.0.240][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '46014'
+    'REDIRECT_URL' => '/backend/web//position-salary/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/default'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413880.147
+    'REQUEST_TIME' => 1485413880
+]
+2017-01-26 13:58:31 [10.240.0.5][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:58:31 [10.240.0.5][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.5'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '49724'
+    'REDIRECT_URL' => '/backend/web//position-salary/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/default'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413911.549
+    'REQUEST_TIME' => 1485413911
+]
+2017-01-26 13:58:42 [10.240.0.5][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 13:58:42 [10.240.0.5][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.5'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '49926'
+    'REDIRECT_URL' => '/backend/web//position-salary/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/default'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485413922.159
+    'REQUEST_TIME' => 1485413922
+]
+2017-01-26 14:12:19 [10.240.1.14][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 14:12:19 [10.240.1.14][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '52672'
+    'REDIRECT_URL' => '/backend/web//position-salary/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/default'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485414739.175
+    'REQUEST_TIME' => 1485414739
+]
+2017-01-26 14:29:49 [10.240.1.12][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 14:29:48 [10.240.1.12][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/position-salary/calculator'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '35780'
+    'REDIRECT_URL' => '/backend/web//position-salary/default'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary/default'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485415787.818
+    'REQUEST_TIME' => 1485415787
+]
+2017-01-26 15:16:39 [10.240.0.230][1][bh32hltf52v2a5k7jve4air5m5][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "assets/883ec424/images/loading.gif".' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php:531
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('assets/883ec424...', Array)
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'à¹„à¸¡à¹ˆà¸à¸šà¸«à¸™à¹‰à¸²' in /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2017-01-26 15:16:39 [10.240.0.230][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'image/webp,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/assets/883ec424/css/custom.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '55122'
+    'REDIRECT_URL' => '/backend/web//assets/883ec424/images/loading.gif'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/assets/883ec424/images/loading.gif'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418599.358
+    'REQUEST_TIME' => 1485418599
+]
+2017-01-26 15:16:41 [10.240.0.240][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/index.php:84
+2017-01-26 15:16:40 [10.240.0.240][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '52980'
+    'REDIRECT_URL' => '/backend/web//person'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418600.818
+    'REQUEST_TIME' => 1485418600
+]
+2017-01-26 15:16:53 [10.240.0.5][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/index.php:84
+2017-01-26 15:16:53 [10.240.0.5][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/profile'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.5'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '58332'
+    'REDIRECT_URL' => '/backend/web//person'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418613.327
+    'REQUEST_TIME' => 1485418613
+]
+2017-01-26 15:17:37 [10.240.0.214][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/index.php:84
+2017-01-26 15:17:37 [10.240.0.214][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.214'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '38636'
+    'REDIRECT_URL' => '/backend/web//person'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418657.531
+    'REQUEST_TIME' => 1485418657
+]
+2017-01-26 15:18:56 [10.240.1.12][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function format() on a non-object' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/models/Person.php:115
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/Query.php(214): yii\db\ActiveQuery->populate()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(164): yii\db\ActiveQuery->all()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(133): yii\validators\UniqueValidator->modelExists()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveRecord.php(564): yii\base\Model->validate()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/BaseActiveRecord.php(637): yii\db\ActiveRecord->update()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(293): yii\db\BaseActiveRecord->save()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionUpdate()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#15 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-26 15:18:56 [10.240.1.12][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'ZXA3X2hXWUwnKkMAWyEjAicpbQcHGx8dCkdZNzliFX9cOX0AXmQjJQ=='
+    'Person' => [
+        'citizen_id' => '1234567890000'
+        'title_id' => '3'
+        'firstname_th' => 'à¸­à¸±à¸™à¸”à¸²'
+        'lastname_th' => 'à¹€à¸—à¸„à¹‚à¸™à¹‚à¸¥à¸¢à¸µ'
+        'firstname_en' => 'Admin'
+        'lastname_en' => 'System'
+        'gender' => 'f'
+        'tel' => '0887777777'
+        'phone' => '0845987412'
+        'birthday' => '24/11/1981'
+    ]
+    'User' => [
+        'username' => 'admin'
+        'email' => 'admin@hryala.codeanyapp.com'
+        'status' => '10'
+    ]
+    'role' => 'admin'
+    'Detail' => [
+        'user_id' => '1'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'religion_id' => '2'
+        'blood_group' => 'AB'
+        'married_status' => '0'
+    ]
+    'PeopleSpouse' => [
+        'citizen_id' => ''
+        'name' => ''
+        'surname' => ''
+        'birthday' => ''
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => ''
+        'live_status' => ''
+    ]
+    'AddressContact' => [
+        'number_registration' => '963258741'
+        'number' => '987'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸•à¸´à¸”à¸•à¹ˆà¸­'
+        'road' => 'à¹€à¸ˆà¸£à¸´à¸à¸à¸£à¸¸à¸‡'
+        'localRegion' => '3'
+        'province_id' => '47'
+        'amphur_id' => '4706'
+        'tambol_id' => '470604'
+        'postcode' => '10110'
+        'phone' => ''
+        'fax' => ''
+        'move_in_date' => '05/01/2009'
+        'move_out_date' => ''
+    ]
+    'oldProvince' => '57'
+    'oldAmphur' => '5704'
+    'oldTambol' => '570401'
+    'AddressRegister' => [
+        'number_registration' => '98721545456'
+        'number' => '321'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸—à¸°à¹€à¸šà¸µà¸¢à¸™'
+        'road' => 'à¹ƒà¸ˆà¸”à¸µ'
+        'localRegion' => '2'
+        'province_id' => '63'
+        'amphur_id' => '6304'
+        'tambol_id' => '630405'
+        'postcode' => '45012'
+        'phone' => '009000999'
+        'fax' => ''
+        'move_in_date' => '09/02/2010'
+        'move_out_date' => ''
+    ]
+    'AddressBirthPlace' => [
+        'number_registration' => '654123'
+        'number' => '61'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¹€à¸à¸´à¸”'
+        'road' => 'à¸¡à¸²à¸à¹†'
+        'localRegion' => '2'
+        'province_id' => '57'
+        'amphur_id' => '5704'
+        'tambol_id' => '570401'
+        'postcode' => '32540'
+        'phone' => '111111111'
+        'fax' => '111111'
+        'move_in_date' => '15/06/1994'
+        'move_out_date' => ''
+    ]
+    'PeopleFather' => [
+        'citizen_id' => '34538530945830'
+        'name' => 'à¸ªà¸¸à¸”à¸«à¸¥à¹ˆà¸­'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '24/11/1981'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸à¸±à¸à¸œà¹ˆà¸­à¸™'
+        'live_status' => '1'
+    ]
+    'PeopleMother' => [
+        'citizen_id' => '45456456'
+        'name' => 'à¸ªà¸¸à¸”à¸ªà¸ªà¸§à¸¢'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '15/07/1999'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸™à¸­à¸™à¸«à¸¥à¸±à¸š'
+        'live_status' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'CONTENT_LENGTH' => '4120'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'https://hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '36580'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/backend/web//person/default/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/office/person/default/update?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418736.424
+    'REQUEST_TIME' => 1485418736
+]
+2017-01-26 15:19:31 [10.240.0.213][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function format() on a non-object' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/models/Person.php:115
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/Query.php(214): yii\db\ActiveQuery->populate()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(164): yii\db\ActiveQuery->all()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(133): yii\validators\UniqueValidator->modelExists()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveRecord.php(564): yii\base\Model->validate()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/BaseActiveRecord.php(637): yii\db\ActiveRecord->update()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(293): yii\db\BaseActiveRecord->save()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionUpdate()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#15 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-26 15:19:31 [10.240.0.213][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'dDg0bllhTnM2YkAxahc0PTZhbjY2LQgiGw9aBghUAkBNcX4xb1I0Gg=='
+    'Person' => [
+        'citizen_id' => '1234567890000'
+        'title_id' => '3'
+        'firstname_th' => 'à¸­à¸±à¸™à¸”à¸²'
+        'lastname_th' => 'à¹€à¸—à¸„à¹‚à¸™à¹‚à¸¥à¸¢à¸µ'
+        'firstname_en' => 'Admin'
+        'lastname_en' => 'System'
+        'gender' => 'f'
+        'tel' => '0887777777'
+        'phone' => '0845987412'
+        'birthday' => '24/11/1981'
+    ]
+    'User' => [
+        'username' => 'admin'
+        'email' => 'admin@hryala.codeanyapp.com'
+        'status' => '10'
+    ]
+    'role' => 'admin'
+    'Detail' => [
+        'user_id' => '1'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'religion_id' => '2'
+        'blood_group' => 'AB'
+        'married_status' => '0'
+    ]
+    'PeopleSpouse' => [
+        'citizen_id' => ''
+        'name' => ''
+        'surname' => ''
+        'birthday' => ''
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => ''
+        'live_status' => ''
+    ]
+    'AddressContact' => [
+        'number_registration' => '963258741'
+        'number' => '987'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸•à¸´à¸”à¸•à¹ˆà¸­'
+        'road' => 'à¹€à¸ˆà¸£à¸´à¸à¸à¸£à¸¸à¸‡'
+        'localRegion' => '3'
+        'province_id' => '47'
+        'amphur_id' => '4706'
+        'tambol_id' => '470604'
+        'postcode' => '10110'
+        'phone' => ''
+        'fax' => ''
+        'move_in_date' => '05/01/2009'
+        'move_out_date' => ''
+    ]
+    'oldProvince' => '57'
+    'oldAmphur' => '5704'
+    'oldTambol' => '570401'
+    'AddressRegister' => [
+        'number_registration' => '98721545456'
+        'number' => '321'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸—à¸°à¹€à¸šà¸µà¸¢à¸™'
+        'road' => 'à¹ƒà¸ˆà¸”à¸µ'
+        'localRegion' => '2'
+        'province_id' => '63'
+        'amphur_id' => '6304'
+        'tambol_id' => '630405'
+        'postcode' => '45012'
+        'phone' => '009000999'
+        'fax' => ''
+        'move_in_date' => '09/02/2010'
+        'move_out_date' => ''
+    ]
+    'AddressBirthPlace' => [
+        'number_registration' => '654123'
+        'number' => '61'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¹€à¸à¸´à¸”'
+        'road' => 'à¸¡à¸²à¸à¹†'
+        'localRegion' => '2'
+        'province_id' => '57'
+        'amphur_id' => '5704'
+        'tambol_id' => '570401'
+        'postcode' => '32540'
+        'phone' => '111111111'
+        'fax' => '111111'
+        'move_in_date' => '15/06/1994'
+        'move_out_date' => ''
+    ]
+    'PeopleFather' => [
+        'citizen_id' => '34538530945830'
+        'name' => 'à¸ªà¸¸à¸”à¸«à¸¥à¹ˆà¸­'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '24/11/1981'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸à¸±à¸à¸œà¹ˆà¸­à¸™'
+        'live_status' => '1'
+    ]
+    'PeopleMother' => [
+        'citizen_id' => '45456456'
+        'name' => 'à¸ªà¸¸à¸”à¸ªà¸ªà¸§à¸¢'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '15/07/1999'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸™à¸­à¸™à¸«à¸¥à¸±à¸š'
+        'live_status' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'CONTENT_LENGTH' => '4120'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'https://hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.213'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '59784'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/backend/web//person/default/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/office/person/default/update?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418771.15
+    'REQUEST_TIME' => 1485418771
+]
+2017-01-26 15:20:28 [10.240.0.33][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function format() on a non-object' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/models/Person.php:115
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/Query.php(214): yii\db\ActiveQuery->populate()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(164): yii\db\ActiveQuery->all()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(133): yii\validators\UniqueValidator->modelExists()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveRecord.php(564): yii\base\Model->validate()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/BaseActiveRecord.php(637): yii\db\ActiveRecord->update()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(293): yii\db\BaseActiveRecord->save()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionUpdate()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#15 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-26 15:20:27 [10.240.0.33][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'aTdvN1k5UlErbRtoak8oHytuNW82dRQABgABXwgMHmJQfiVobwooOA=='
+    'Person' => [
+        'citizen_id' => '1234567890000'
+        'title_id' => '3'
+        'firstname_th' => 'à¸­à¸±à¸™à¸”à¸²'
+        'lastname_th' => 'à¹€à¸—à¸„à¹‚à¸™à¹‚à¸¥à¸¢à¸µ'
+        'firstname_en' => 'Admin'
+        'lastname_en' => 'System'
+        'gender' => 'f'
+        'tel' => '0887777777'
+        'phone' => '0845987412'
+        'birthday' => '25/11/1981'
+    ]
+    'User' => [
+        'username' => 'admin'
+        'email' => 'admin@hryala.codeanyapp.com'
+        'status' => '10'
+    ]
+    'role' => 'admin'
+    'Detail' => [
+        'user_id' => '1'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'religion_id' => '2'
+        'blood_group' => 'AB'
+        'married_status' => '0'
+    ]
+    'PeopleSpouse' => [
+        'citizen_id' => ''
+        'name' => ''
+        'surname' => ''
+        'birthday' => ''
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => ''
+        'live_status' => ''
+    ]
+    'AddressContact' => [
+        'number_registration' => '963258741'
+        'number' => '987'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸•à¸´à¸”à¸•à¹ˆà¸­'
+        'road' => 'à¹€à¸ˆà¸£à¸´à¸à¸à¸£à¸¸à¸‡'
+        'localRegion' => '3'
+        'province_id' => '47'
+        'amphur_id' => '4706'
+        'tambol_id' => '470604'
+        'postcode' => '10110'
+        'phone' => ''
+        'fax' => ''
+        'move_in_date' => '05/01/2009'
+        'move_out_date' => ''
+    ]
+    'oldProvince' => '57'
+    'oldAmphur' => '5704'
+    'oldTambol' => '570401'
+    'AddressRegister' => [
+        'number_registration' => '98721545456'
+        'number' => '321'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸—à¸°à¹€à¸šà¸µà¸¢à¸™'
+        'road' => 'à¹ƒà¸ˆà¸”à¸µ'
+        'localRegion' => '2'
+        'province_id' => '63'
+        'amphur_id' => '6304'
+        'tambol_id' => '630405'
+        'postcode' => '45012'
+        'phone' => '009000999'
+        'fax' => ''
+        'move_in_date' => '09/02/2010'
+        'move_out_date' => ''
+    ]
+    'AddressBirthPlace' => [
+        'number_registration' => '654123'
+        'number' => '61'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¹€à¸à¸´à¸”'
+        'road' => 'à¸¡à¸²à¸à¹†'
+        'localRegion' => '2'
+        'province_id' => '57'
+        'amphur_id' => '5704'
+        'tambol_id' => '570401'
+        'postcode' => '32540'
+        'phone' => '111111111'
+        'fax' => '111111'
+        'move_in_date' => '15/06/1994'
+        'move_out_date' => ''
+    ]
+    'PeopleFather' => [
+        'citizen_id' => '34538530945830'
+        'name' => 'à¸ªà¸¸à¸”à¸«à¸¥à¹ˆà¸­'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '24/11/1981'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸à¸±à¸à¸œà¹ˆà¸­à¸™'
+        'live_status' => '1'
+    ]
+    'PeopleMother' => [
+        'citizen_id' => '45456456'
+        'name' => 'à¸ªà¸¸à¸”à¸ªà¸ªà¸§à¸¢'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '15/07/1999'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸™à¸­à¸™à¸«à¸¥à¸±à¸š'
+        'live_status' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'CONTENT_LENGTH' => '4120'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'https://hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.33'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '53528'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/backend/web//person/default/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/office/person/default/update?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418827.977
+    'REQUEST_TIME' => 1485418827
+]
+2017-01-26 15:23:00 [10.240.0.240][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function format() on a non-object' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/models/Person.php:115
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/Query.php(214): yii\db\ActiveQuery->populate()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(164): yii\db\ActiveQuery->all()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(133): yii\validators\UniqueValidator->modelExists()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveRecord.php(564): yii\base\Model->validate()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/BaseActiveRecord.php(637): yii\db\ActiveRecord->update()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(293): yii\db\BaseActiveRecord->save()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionUpdate()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#15 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-26 15:22:59 [10.240.0.240][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'aTdvN1k5UlErbRtoak8oHytuNW82dRQABgABXwgMHmJQfiVobwooOA=='
+    'Person' => [
+        'citizen_id' => '1234567890000'
+        'title_id' => '3'
+        'firstname_th' => 'à¸­à¸±à¸™à¸”à¸²'
+        'lastname_th' => 'à¹€à¸—à¸„à¹‚à¸™à¹‚à¸¥à¸¢à¸µ'
+        'firstname_en' => 'Admin'
+        'lastname_en' => 'System'
+        'gender' => 'f'
+        'tel' => '0887777777'
+        'phone' => '0845987412'
+        'birthday' => '25/11/1981'
+    ]
+    'User' => [
+        'username' => 'admin'
+        'email' => 'admin@hryala.codeanyapp.com'
+        'status' => '10'
+    ]
+    'role' => 'admin'
+    'Detail' => [
+        'user_id' => '1'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'religion_id' => '2'
+        'blood_group' => 'AB'
+        'married_status' => '0'
+    ]
+    'PeopleSpouse' => [
+        'citizen_id' => ''
+        'name' => ''
+        'surname' => ''
+        'birthday' => ''
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => ''
+        'live_status' => ''
+    ]
+    'AddressContact' => [
+        'number_registration' => '963258741'
+        'number' => '987'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸•à¸´à¸”à¸•à¹ˆà¸­'
+        'road' => 'à¹€à¸ˆà¸£à¸´à¸à¸à¸£à¸¸à¸‡'
+        'localRegion' => '3'
+        'province_id' => '47'
+        'amphur_id' => '4706'
+        'tambol_id' => '470604'
+        'postcode' => '10110'
+        'phone' => ''
+        'fax' => ''
+        'move_in_date' => '05/01/2009'
+        'move_out_date' => ''
+    ]
+    'oldProvince' => '57'
+    'oldAmphur' => '5704'
+    'oldTambol' => '570401'
+    'AddressRegister' => [
+        'number_registration' => '98721545456'
+        'number' => '321'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸—à¸°à¹€à¸šà¸µà¸¢à¸™'
+        'road' => 'à¹ƒà¸ˆà¸”à¸µ'
+        'localRegion' => '2'
+        'province_id' => '63'
+        'amphur_id' => '6304'
+        'tambol_id' => '630405'
+        'postcode' => '45012'
+        'phone' => '009000999'
+        'fax' => ''
+        'move_in_date' => '09/02/2010'
+        'move_out_date' => ''
+    ]
+    'AddressBirthPlace' => [
+        'number_registration' => '654123'
+        'number' => '61'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¹€à¸à¸´à¸”'
+        'road' => 'à¸¡à¸²à¸à¹†'
+        'localRegion' => '2'
+        'province_id' => '57'
+        'amphur_id' => '5704'
+        'tambol_id' => '570401'
+        'postcode' => '32540'
+        'phone' => '111111111'
+        'fax' => '111111'
+        'move_in_date' => '15/06/1994'
+        'move_out_date' => ''
+    ]
+    'PeopleFather' => [
+        'citizen_id' => '34538530945830'
+        'name' => 'à¸ªà¸¸à¸”à¸«à¸¥à¹ˆà¸­'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '24/11/1981'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸à¸±à¸à¸œà¹ˆà¸­à¸™'
+        'live_status' => '1'
+    ]
+    'PeopleMother' => [
+        'citizen_id' => '45456456'
+        'name' => 'à¸ªà¸¸à¸”à¸ªà¸ªà¸§à¸¢'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '15/07/1999'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸™à¸­à¸™à¸«à¸¥à¸±à¸š'
+        'live_status' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'CONTENT_LENGTH' => '4120'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'https://hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.240'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '56856'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/backend/web//person/default/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/office/person/default/update?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485418979.901
+    'REQUEST_TIME' => 1485418979
+]
+2017-01-26 15:24:07 [10.240.0.230][1][bh32hltf52v2a5k7jve4air5m5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Call to a member function format() on a non-object' in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/models/Person.php:115
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/Query.php(214): yii\db\ActiveQuery->populate()
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all()
+#2 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(164): yii\db\ActiveQuery->all()
+#3 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/UniqueValidator.php(133): yii\validators\UniqueValidator->modelExists()
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/validators/Validator.php(267): yii\validators\UniqueValidator->validateAttribute()
+#5 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Model.php(358): yii\validators\Validator->validateAttributes()
+#6 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/ActiveRecord.php(564): yii\base\Model->validate()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/db/BaseActiveRecord.php(637): yii\db\ActiveRecord->update()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(293): yii\db\BaseActiveRecord->save()
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): andahrm\person\controllers\DefaultController->actionUpdate()
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams()
+#12 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction()
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction()
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest()
+#15 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#16 {main}
+2017-01-26 15:24:07 [10.240.0.230][1][bh32hltf52v2a5k7jve4air5m5][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-backend' => 'aTdvN1k5UlErbRtoak8oHytuNW82dRQABgABXwgMHmJQfiVobwooOA=='
+    'Person' => [
+        'citizen_id' => '1234567890000'
+        'title_id' => '3'
+        'firstname_th' => 'à¸­à¸±à¸™à¸”à¸²'
+        'lastname_th' => 'à¹€à¸—à¸„à¹‚à¸™à¹‚à¸¥à¸¢à¸µ'
+        'firstname_en' => 'Admin'
+        'lastname_en' => 'System'
+        'gender' => 'f'
+        'tel' => '0887777777'
+        'phone' => '0845987412'
+        'birthday' => '25/11/1981'
+    ]
+    'User' => [
+        'username' => 'admin'
+        'email' => 'admin@hryala.codeanyapp.com'
+        'status' => '10'
+    ]
+    'role' => 'admin'
+    'Detail' => [
+        'user_id' => '1'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'religion_id' => '2'
+        'blood_group' => 'AB'
+        'married_status' => '0'
+    ]
+    'PeopleSpouse' => [
+        'citizen_id' => ''
+        'name' => ''
+        'surname' => ''
+        'birthday' => ''
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => ''
+        'live_status' => ''
+    ]
+    'AddressContact' => [
+        'number_registration' => '963258741'
+        'number' => '987'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸•à¸´à¸”à¸•à¹ˆà¸­'
+        'road' => 'à¹€à¸ˆà¸£à¸´à¸à¸à¸£à¸¸à¸‡'
+        'localRegion' => '3'
+        'province_id' => '47'
+        'amphur_id' => '4706'
+        'tambol_id' => '470604'
+        'postcode' => '10110'
+        'phone' => ''
+        'fax' => ''
+        'move_in_date' => '05/01/2009'
+        'move_out_date' => ''
+    ]
+    'oldProvince' => '57'
+    'oldAmphur' => '5704'
+    'oldTambol' => '570401'
+    'AddressRegister' => [
+        'number_registration' => '98721545456'
+        'number' => '321'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¸—à¸°à¹€à¸šà¸µà¸¢à¸™'
+        'road' => 'à¹ƒà¸ˆà¸”à¸µ'
+        'localRegion' => '2'
+        'province_id' => '63'
+        'amphur_id' => '6304'
+        'tambol_id' => '630405'
+        'postcode' => '45012'
+        'phone' => '009000999'
+        'fax' => ''
+        'move_in_date' => '09/02/2010'
+        'move_out_date' => ''
+    ]
+    'AddressBirthPlace' => [
+        'number_registration' => '654123'
+        'number' => '61'
+        'sub_road' => 'à¸šà¹‰à¸²à¸™à¹€à¸à¸´à¸”'
+        'road' => 'à¸¡à¸²à¸à¹†'
+        'localRegion' => '2'
+        'province_id' => '57'
+        'amphur_id' => '5704'
+        'tambol_id' => '570401'
+        'postcode' => '32540'
+        'phone' => '111111111'
+        'fax' => '111111'
+        'move_in_date' => '15/06/1994'
+        'move_out_date' => ''
+    ]
+    'PeopleFather' => [
+        'citizen_id' => '34538530945830'
+        'name' => 'à¸ªà¸¸à¸”à¸«à¸¥à¹ˆà¸­'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '24/11/1981'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸à¸±à¸à¸œà¹ˆà¸­à¸™'
+        'live_status' => '1'
+    ]
+    'PeopleMother' => [
+        'citizen_id' => '45456456'
+        'name' => 'à¸ªà¸¸à¸”à¸ªà¸ªà¸§à¸¢'
+        'surname' => 'à¸‹à¸´à¸ªà¹€à¸•à¹‡à¸¡'
+        'birthday' => '15/07/1999'
+        'nationality_id' => '171'
+        'race_id' => '99'
+        'occupation' => 'à¸™à¸­à¸™à¸«à¸¥à¸±à¸š'
+        'live_status' => '0'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'CONTENT_LENGTH' => '4120'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_ORIGIN' => 'https://hrm-kuakling.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '59400'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/backend/web//person/default/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/office/person/default/update?id=1'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485419047.73
+    'REQUEST_TIME' => 1485419047
+]
+2017-01-26 15:25:48 [10.240.1.16][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/index.php:84
+2017-01-26 15:25:48 [10.240.1.16][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person/default/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.16'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '45434'
+    'REDIRECT_URL' => '/backend/web//person'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485419148.269
+    'REQUEST_TIME' => 1485419148
+]
+2017-01-26 15:40:33 [10.240.0.230][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 15:40:33 [10.240.0.230][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.41'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.17'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '42656'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485420033.304
+    'REQUEST_TIME' => 1485420033
+]
+2017-01-26 15:54:37 [10.240.1.14][1][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-position-salary/views/default/index.php:71
+2017-01-26 15:54:37 [10.240.1.14][1][-][info][application] $_COOKIE = [
+    '_csrf-backend' => '2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi\";}'
+    'advanced-backend' => 'bh32hltf52v2a5k7jve4air5m5'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/office'
+    '__id' => 1
+    'krajeeGridExportSalt' => 'm<ôÍÛEûğğH³æ£€ä&tålëx-æ¶³…8±'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=2c29e8def882b443687b970e8a8d432ebedcd6b62831205d5395a268a51344c6a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22BZt_3vzNBYZXoLFQo7nhQ5L39IJ_63zi%22%3B%7D; advanced-backend=bh32hltf52v2a5k7jve4air5m5; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.17'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.14'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '51168'
+    'REDIRECT_URL' => '/backend/web//position-salary'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/position-salary'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485420876.888
+    'REQUEST_TIME' => 1485420876
+]

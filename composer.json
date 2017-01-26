@@ -47,7 +47,8 @@
         "andatech/yii2-dynamicform": "*",
         "andatech-hrm/yii2-development": "dev-master",
         "kartik-v/yii2-date-range": "@dev",
-        "kuakling/yii2-smart-wizard": "*"
+        "kuakling/yii2-smart-wizard": "*",
+        "andatech-hrm/yii2-salary-calculation": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

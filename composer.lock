@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5929d12caa5b3c0f82aff5f84e8552dc",
-    "content-hash": "06bb61b0a8dd09be60246be61fc622a0",
+    "hash": "9ca570f434e4a83a964329212ec364ce",
+    "content-hash": "e84e8cafbe46345545a26a4bcae20bdb",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -291,12 +291,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/andatech-hrm/yii2-person.git",
-                "reference": "804b20c0d6660593524d9f307b40a3c424e3cdf1"
+                "reference": "21cfec4c8c51f6f1e5e83b57c6d0f67cfb7cb990"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/andatech-hrm/yii2-person/zipball/804b20c0d6660593524d9f307b40a3c424e3cdf1",
-                "reference": "804b20c0d6660593524d9f307b40a3c424e3cdf1",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-person/zipball/21cfec4c8c51f6f1e5e83b57c6d0f67cfb7cb990",
+                "reference": "21cfec4c8c51f6f1e5e83b57c6d0f67cfb7cb990",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -332,7 +332,7 @@
                 "extension",
                 "yii2"
             ],
-            "time": "2017-01-24 23:43:13"
+            "time": "2017-01-26 08:12:04"
         },
         {
             "name": "andatech-hrm/yii2-position-salary",
@@ -419,6 +419,55 @@
                 "yii2"
             ],
             "time": "2017-01-24 23:46:40"
+        },
+        {
+            "name": "andatech-hrm/yii2-salary-calculation",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-salary-calculation.git",
+                "reference": "7754871210331d9c3885cb65c3d709945e821c12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-salary-calculation/zipball/7754871210331d9c3885cb65c3d709945e821c12",
+                "reference": "7754871210331d9c3885cb65c3d709945e821c12",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\salaryCalculation\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Salary Calculation System",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-01-26 07:22:44"
         },
         {
             "name": "andatech/yii2-core",
@@ -6901,7 +6950,8 @@
         "softark/yii2-dual-listbox": 20,
         "wbraganca/yii2-dynamicform": 20,
         "andatech-hrm/yii2-development": 20,
-        "kartik-v/yii2-date-range": 20
+        "kartik-v/yii2-date-range": 20,
+        "andatech-hrm/yii2-salary-calculation": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
