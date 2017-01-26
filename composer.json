@@ -46,7 +46,8 @@
         "wbraganca/yii2-dynamicform": "dev-master",
         "andatech/yii2-dynamicform": "*",
         "andatech-hrm/yii2-development": "dev-master",
-        "kartik-v/yii2-date-range": "@dev"
+        "kartik-v/yii2-date-range": "@dev",
+        "kuakling/yii2-smart-wizard": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
