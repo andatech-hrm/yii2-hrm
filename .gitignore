@@ -24,6 +24,7 @@ Thumbs.db
 # /uploads
 /frontend/web/assets
 /backend/web/assets
+/frontend/runtime
 /backend/runtime
 
 # composer itself is not needed
