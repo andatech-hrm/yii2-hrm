@@ -3384,3 +3384,173 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1485397383.797
     'REQUEST_TIME' => 1485397383
 ]
+2017-01-26 09:26:13 [10.240.1.30][1][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/views/_nav-item-default.php' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(kuakling\smartwizard\Step))
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Widget.php(197): yii\base\View->render('_nav-item-defau...', Array, Object(kuakling\smartwizard\Step))
+#2 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(35): yii\base\Widget->render('_nav-item-defau...', Array)
+#3 [internal function]: kuakling\smartwizard\Step->kuakling\smartwizard\{closure}('aaaaa', 0)
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/helpers/BaseHtml.php(1064): call_user_func(Object(Closure), 'aaaaa', 0)
+#5 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(38): yii\helpers\BaseHtml::ul(Array, Array)
+#6 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(27): kuakling\smartwizard\Step->renderWidget()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Widget.php(104): kuakling\smartwizard\Step->run()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(19): yii\base\Widget::widget(Array)
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, NULL)
+#12 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render('_form', Array)
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(andahrm\person\controllers\DefaultController))
+#16 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('wizard/create', Array, Object(andahrm\person\controllers\DefaultController))
+#17 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render('wizard/create', Array)
+#18 [internal function]: andahrm\person\controllers\DefaultController->actionCreate()
+#19 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction('create', Array)
+#22 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('person/default/...', Array)
+#23 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+2017-01-26 09:26:13 [10.240.1.30][1][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.11'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.30'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '52440'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485397573.748
+    'REQUEST_TIME' => 1485397573
+]
+2017-01-26 09:26:54 [10.240.1.16][1][-][error][yii\base\ViewNotFoundException] exception 'yii\base\ViewNotFoundException' with message 'The view file does not exist: /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/views/../_nav-item-default.php' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php:229
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(kuakling\smartwizard\Step))
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Widget.php(197): yii\base\View->render('../_nav-item-de...', Array, Object(kuakling\smartwizard\Step))
+#2 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(35): yii\base\Widget->render('../_nav-item-de...', Array)
+#3 [internal function]: kuakling\smartwizard\Step->kuakling\smartwizard\{closure}('aaaaa', 0)
+#4 /home/ubuntu/workspace/vendor/yiisoft/yii2/helpers/BaseHtml.php(1064): call_user_func(Object(Closure), 'aaaaa', 0)
+#5 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(38): yii\helpers\BaseHtml::ul(Array, Array)
+#6 /home/ubuntu/workspace/vendor/kuakling/yii2-smart-wizard/Step.php(27): kuakling\smartwizard\Step->renderWidget()
+#7 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Widget.php(104): kuakling\smartwizard\Step->run()
+#8 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/_form.php(19): yii\base\Widget::widget(Array)
+#9 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#10 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#11 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, NULL)
+#12 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/views/default/wizard/create.php(14): yii\base\View->render('_form', Array)
+#13 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(328): require('/home/ubuntu/wo...')
+#14 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/home/ubuntu/wo...', Array)
+#15 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/home/ubuntu/wo...', Array, Object(andahrm\person\controllers\DefaultController))
+#16 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(381): yii\base\View->render('wizard/create', Array, Object(andahrm\person\controllers\DefaultController))
+#17 /home/ubuntu/workspace/vendor/andatech-hrm/yii2-person/controllers/DefaultController.php(253): yii\base\Controller->render('wizard/create', Array)
+#18 [internal function]: andahrm\person\controllers\DefaultController->actionCreate()
+#19 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#20 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#21 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php(522): yii\base\Controller->runAction('create', Array)
+#22 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('person/default/...', Array)
+#23 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#24 /home/ubuntu/workspace/backend/web/index.php(17): yii\base\Application->run()
+#25 {main}
+2017-01-26 09:26:54 [10.240.1.16][1][-][info][application] $_COOKIE = [
+    'advanced-backend' => 'bdh95k0gcd2cnao35c7e6tl2u5'
+    '_csrf-backend' => '8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI\";}'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"1_PYaTc9queRAGVboWY__1jVMOLgL4CM\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+    'krajeeGridExportSalt' => '$8áôœ‘\'Á\'ö¦F¢„+÷ş¥Ô­¯{Ctµ©‚K'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-kuakling.c9users.io'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-kuakling.c9users.io/office/person'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bdh95k0gcd2cnao35c7e6tl2u5; _csrf-backend=8dcdbeffabab0e27a7d44b5261d327629e475b498dc08789f32294350158a75ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22emJyVLsaA2pcPosZCF0Y1frQdUrp2rqI%22%3B%7D; XDEBUG_SESSION=cloud9ide; _identity-backend=4d27b988e6cab6751d0cbe100637c57827d608871a5bc1b12b779d3a1e3d7167a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%221_PYaTc9queRAGVboWY__1jVMOLgL4CM%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '122.154.60.33'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-kuakling.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-kuakling.c9users.io'
+    'SERVER_ADDR' => '172.17.0.49'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.16'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '40254'
+    'REDIRECT_URL' => '/backend/web//person/default/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/person/default/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485397614.763
+    'REQUEST_TIME' => 1485397614
+]
