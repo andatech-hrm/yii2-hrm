@@ -1,8 +1,6 @@
 <?php
 
 
-use andahrm\structure\models\Structure;
-andahrm\structure\assets\JqueryOrg::register($this);
 /* @var $this yii\web\View */
 //echo Yii::$app->request->userIP;
 $this->title = 'My Yii Application';
@@ -49,34 +47,6 @@ $module = $this->context->module->id;
     </div>
 </div>
 
-<div class="x_panel">
-  <div class="x_title">
-      <h2>โครงการองค์กร <small>โองการบริหารส่วนจังหวัดยะลา</small></h2>
-      <div class="clearfix"></div>
-  </div>
-  <div class="x_content">
-    <div class="row">
-      <div class="col-md-12 col-sm-12 col-xs-12">
-          <div id="content" style="margin-bottom:30px;">
-            <div id="mainOrg">
-            <?=Structure::getOrg()?>
-            </div>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
 
-<?php
-  $this->registerJs('
-    $(function() {
-            $("#organisation").orgChart({
-              container: $("#mainOrg"),
-              interactive: true,
-              fade: true,
-              speed: "slow",
-              stack    : true, 
-              depth    : 3
-            });
-    });
-');
+
+<?=$this->render('_structure')?>
