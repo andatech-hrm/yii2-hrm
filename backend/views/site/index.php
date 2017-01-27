@@ -3,7 +3,7 @@
 
 /* @var $this yii\web\View */
 //echo Yii::$app->request->userIP;
-$this->title = 'My Yii Application';
+$this->title = Yii::$app->name;
 ?>
 <?php
 $request = Yii::$app->request;

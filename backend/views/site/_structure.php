@@ -53,5 +53,30 @@ $this->registerJs("
         'exportFilename': 'MyOrgChart',
         'depth': 4,
         'verticalDepth': 4,
+        'pan': true,
+        'zoom': true
       });
 ");
+
+
+/*** fix css by Surakit ***/
+/*
+$this->registerCss("
+.orgchart .node .content {
+  height: auto;
+  padding: 5px;
+}
+.orgchart .node .content .title {
+  background: transparent;
+  color: #2a3f54;
+  padding: 0;
+  font-size: 13px;
+}
+.orgchart .node {
+  width: 150px;
+}
+.orgchart .first-level {
+    width: 200px;
+}
+");
+*/
