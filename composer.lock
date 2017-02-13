@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4a022d1c4084f098759f2a79adea08a9",
-    "content-hash": "1d5ce0808606b31eea0716b35c511747",
+    "hash": "208acff1bb7148cfd9295f08757a33a0",
+    "content-hash": "ccdc606e02035e67001f201c55015c41",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -187,6 +187,55 @@
                 "yii2"
             ],
             "time": "2017-01-16 21:52:59"
+        },
+        {
+            "name": "andatech-hrm/yii2-insignia",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-insignia.git",
+                "reference": "4737537da4ded3e91cc11b936c177daf966a7025"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-insignia/zipball/4737537da4ded3e91cc11b936c177daf966a7025",
+                "reference": "4737537da4ded3e91cc11b936c177daf966a7025",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\insignia\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii 2 for Insignia",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-02-11 02:45:56"
         },
         {
             "name": "andatech-hrm/yii2-leave",
@@ -7126,7 +7175,8 @@
         "andatech-hrm/yii2-development": 20,
         "kartik-v/yii2-date-range": 20,
         "andatech-hrm/yii2-salary-calculation": 20,
-        "andatech-hrm/yii2-organizational-structure": 20
+        "andatech-hrm/yii2-organizational-structure": 20,
+        "andatech-hrm/yii2-insignia": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

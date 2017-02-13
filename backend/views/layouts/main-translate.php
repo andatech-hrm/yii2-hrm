@@ -19,8 +19,9 @@ TranslateManagerAsset::register($this);
 
 //         ['label' => Html::icon('home'). ' ' .Yii::t('language', 'Home'),
 //          'url' => ['/translatemanager/default']],
-        ['label' => Html::icon('flag'). ' ' .Yii::t('language', 'Languages'),
-         'url' => ['/translatemanager/language/list']],
+        ['label' => Yii::t('language', 'Languages'),
+         'url' => ['/translatemanager/language/list'],
+         'icon' => 'fa fa-flag'],
         ['label' => Html::icon('new-window'). ' ' .Yii::t('language', 'Create'), 
          'url' => ['/translatemanager/language/create']],
         ['label' => Html::icon('search'). ' ' .Yii::t('language', 'Scan'), 

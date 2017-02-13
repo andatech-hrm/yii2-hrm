@@ -54,7 +54,7 @@ $this->registerJs("
         'depth': 4,
         'verticalDepth': 4,
         'pan': true,
-        'zoom': true
+        //'zoom': true
       });
 ");
 

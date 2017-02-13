@@ -126,6 +126,30 @@ a.desc:after {
 }
 
 /******Update by Madone******/
+
+form div.required label.control-label:after {
+  content:" * ";
+  color:red;
+}
+
+
+#data-grid-container .media .profile_thumb {
+    width:30px;
+    height: 30px;
+}
+
+.media .profile_thumb img{
+    width:100%;
+}
+.media-body {
+    width: 220px;
+}
+.media-body p.position{
+    font-size:12px;
+    word-break: break-all;
+    white-space: normal;
+}
+
 .text-dashed{
   border-bottom:1px dashed #888;
   padding:0 8px 0 3px;

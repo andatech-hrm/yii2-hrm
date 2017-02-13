@@ -232,12 +232,12 @@ var \$SIDEBAR_MENU = $('#sidebar-menu');
 var actionIndex = '".$currentMenu."';
 \$SIDEBAR_MENU.find('a[href=\"'+actionIndex+'\"]').parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
 
-\$('a').click(function(){
-    var \$HREF = $(this).attr('href');
-    if(\$HREF === '#' || \$HREF === '#!'){
-        return false;
-    }
-});
+// \$('a').click(function(){
+//     var \$HREF = $(this).attr('href');
+//     if(\$HREF === '#' || \$HREF === '#!'){
+//         return false;
+//     }
+// });
 ");
 ?>
     

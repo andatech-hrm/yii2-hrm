@@ -48,7 +48,8 @@
         "kartik-v/yii2-date-range": "@dev",
         "kuakling/yii2-smart-wizard": "*",
         "andatech-hrm/yii2-salary-calculation": "dev-master",
-        "andatech-hrm/yii2-organizational-structure": "dev-master"
+        "andatech-hrm/yii2-organizational-structure": "dev-master",
+        "andatech-hrm/yii2-insignia": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
