@@ -159,6 +159,10 @@ form div.required label.control-label:after {
   width:100%;
   display:inline-block;
 }
+.width80{
+  width:80%;
+  display:inline-block;
+}
 .text-dotted{
   border-bottom:1px dotted #888;
   padding:0 8px 0 3px;

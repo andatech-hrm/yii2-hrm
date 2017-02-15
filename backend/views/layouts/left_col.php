@@ -47,12 +47,22 @@ use yii\helpers\ArrayHelper;
             $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
           //}
          $menuItems[] =  ["label" => Yii::t('andahrm','Development'), "url" => ["/development/"],"icon" => "line-chart"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Insignia'), "url" => ["/insignia/"],"icon" => "line-chart"];
+         $menuItems[] =  ["label" => Yii::t('andahrm','Insignia'), "url" => ["/insignia/"],"icon" => "star"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "usd"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Salary Calculation'), "url" => ["/salary-calculation/"], "icon" => "calculator"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "book"];
+         $menuItems[] =  [
+             "label" => Yii::t('andahrm','Report'), "url" => '', "icon" => "book",
+             "items" => [
+                                [
+                                    "label" => Yii::t('andahrm','Person Report'),
+                                    "url" => ["/report/person/"],
+                                    "icon" => "users"
+                                ]
+                        ]
+         ];
                           /* $menuItems[] = ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                         [
                             "label" => "Widgets",
