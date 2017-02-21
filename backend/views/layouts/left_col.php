@@ -54,13 +54,18 @@ use yii\helpers\ArrayHelper;
          $menuItems[] =  ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
          $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "book"];
          $menuItems[] =  [
-             "label" => Yii::t('andahrm','Report'), "url" => '', "icon" => "book",
+             "label" => Yii::t('andahrm','Report'), "url" => '#', "icon" => "book",
              "items" => [
                                 [
                                     "label" => Yii::t('andahrm','Person Report'),
                                     "url" => ["/report/person/"],
                                     "icon" => "users"
-                                ]
+                                ],
+                                [
+                                    "label" => Yii::t('andahrm','Leave Report'),
+                                    "url" => ["/report/leave/"],
+                                    "icon" => "users"
+                                ],
                         ]
          ];
                           /* $menuItems[] = ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],

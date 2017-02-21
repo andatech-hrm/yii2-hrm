@@ -62,95 +62,24 @@ $person = PersonApi::instance($user->id);
                                 <span class=" fa fa-angle-down"></span>
                             </a>
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
-                                <li><?= Html::a('<i class="fa fa-address-card pull-right"></i> Profile', ['/user/settings/profile']); ?>
+                                <li><?= Html::a('<i class="fa fa-address-card pull-right"></i> '.Yii::t('andahrm','Profile'), ['/profile']); ?>
                                 </li>
                                 <li>
                                     <a href="javascript:;">
                                         <span class="badge bg-red pull-right">50%</span>
-                                        <span>Settings</span>
+                                        <span><?=Yii::t('andahrm','Settings')?></span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="javascript:;">Help</a>
+                                    <?= Html::a(Yii::t('andahrm','Help'), ['/site/help']); ?>
                                 </li>
                                 <li>
-                                    <?= Html::a('<i class="fa fa-sign-out pull-right"></i> Log Out', ['/user/auth/logout'],['data-method' => 'post']); ?>
+                                    <?= Html::a('<i class="fa fa-sign-out pull-right"></i>'.Yii::t('andahrm','Log Out'), ['/user/auth/logout'],['data-method' => 'post']); ?>
                                 </li>
                             </ul>
                         </li>
 
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
-                                <i class="fa fa-envelope-o"></i>
-                                <span class="badge bg-green">6</span>
-                            </a>
-                            <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a>
-                      <span class="image">
-                                        <img src="http://placehold.it/128x128" alt="Profile Image" />
-                                    </span>
-                      <span>
-                                        <span>John Smith</span>
-                      <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                                    </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <div class="text-center">
-                                        <a href="/">
-                                            <strong>See All Alerts</strong>
-                                            <i class="fa fa-angle-right"></i>
-                                        </a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
+                        <?=$this->render('_notification')?>
 
                     </ul>
                 </nav>
@@ -222,6 +151,14 @@ $person = PersonApi::instance($user->id);
 $currentMenu = (isset($this->params['current-menu'])) ? $this->params['current-menu'] : Yii::$app->request->baseUrl.'/'.$this->context->module->id."/".$this->context->id;
 
 $this->registerJs("
+
+$('.nav.side-menu a').click(function(){
+    if ($(this).is('[href$=\"#\"]')) {
+    //alert('href');
+        return false;
+    }
+});
+
 //$('form').submit(function(){
 $(document).on('submit', 'form', function(){
      var submitBtns = $(this).find(':submit');

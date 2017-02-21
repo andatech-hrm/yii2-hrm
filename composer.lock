@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "92268dab21e9e6281a326fda9fa377ac",
-    "content-hash": "03e2e74a7955125698208eed8ef6742e",
+    "hash": "f4f386b757ac10aac4672f4ca81509ff",
+    "content-hash": "c1505f259b23c1c5175dc4a544c18ab1",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -1671,6 +1671,46 @@
             "description": "jQuery JavaScript Library",
             "homepage": "http://jquery.com",
             "time": "2016-09-23 06:06:29"
+        },
+        {
+            "name": "dixonsatit/yii2-thai-year-formatter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dixonsatit/yii2-thai-year-formatter.git",
+                "reference": "d49836edf680b9639fb4371e5379c405a8f49e9d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dixonsatit/yii2-thai-year-formatter/zipball/d49836edf680b9639fb4371e5379c405a8f49e9d",
+                "reference": "d49836edf680b9639fb4371e5379c405a8f49e9d",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dixonsatit\\thaiYearFormatter\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "satit seethaphon",
+                    "email": "dixonsatit@gmail.com"
+                }
+            ],
+            "description": "Convert Year to Thai Buddhist Era Year",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2015-07-15 09:09:02"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -3764,6 +3804,46 @@
                 "yii2"
             ],
             "time": "2015-12-05 10:37:16"
+        },
+        {
+            "name": "kuakling/yii2-datepicker-buddhist",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kuakling/yii2-datepicker-buddhist.git",
+                "reference": "ceff42e9504eed0a7d57a68b7737697dbed8f817"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kuakling/yii2-datepicker-buddhist/zipball/ceff42e9504eed0a7d57a68b7737697dbed8f817",
+                "reference": "ceff42e9504eed0a7d57a68b7737697dbed8f817",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kuakling\\datepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit",
+                    "email": "kuakling@gmail.com"
+                }
+            ],
+            "description": "Yii2 Datepicker Buddhist",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-02-19 02:40:20"
         },
         {
             "name": "kuakling/yii2-lobibox",
@@ -7603,7 +7683,8 @@
         "andatech-hrm/yii2-salary-calculation": 20,
         "andatech-hrm/yii2-organizational-structure": 20,
         "andatech-hrm/yii2-insignia": 20,
-        "andatech-hrm/yii2-report": 20
+        "andatech-hrm/yii2-report": 20,
+        "kuakling/yii2-datepicker-buddhist": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

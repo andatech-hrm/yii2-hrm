@@ -80,7 +80,10 @@ return [
         ],
         'date' => [
             'class' => 'andahrm\setting\components\Date'
-        ]
+        ],
+        'formatter'=>[
+            'class'=>'dixonsatit\thaiYearFormatter\ThaiYearFormatter',
+        ],
     ],
         'as access' => [
             'class' => 'mdm\admin\components\AccessControl',
