@@ -49,7 +49,7 @@ $module = $this->context->module->id;
     </div>
     
     
-    
+    <?php if(Yii::$app->user->can('manage-person')) : ?>
     <div class="col-xs-12">
         <?php
         Panel::begin(
@@ -120,9 +120,10 @@ $module = $this->context->module->id;
         </div>
         <?php Panel::end() ?>
     </div>
+    <?php endif; ?>
     
     
-    
+    <?php if(Yii::$app->user->can('director')) : ?>
     <div class="col-xs-12">
         <?php
         Panel::begin(
@@ -136,6 +137,7 @@ $module = $this->context->module->id;
         </div>
         <?php Panel::end() ?>
     </div>
+    <?php endif; ?>
 </div>
 
 
