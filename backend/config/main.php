@@ -33,38 +33,38 @@ return [
             'name' => 'advanced-backend',
         ],
         
-        'sentry' => [
-            //'enabled' => false,
-            'class' => 'mito\sentry\SentryComponent',
-            'dsn' => 'https://6d51c95395184944818654b3facd932c:9c72c92517e54d39b422dd50dbb98376@sentry.io/138338', // private DSN
-            //'environment' => YII_CONFIG_ENVIRONMENT, // if not set, the default is `development`
-            'jsNotifier' => true, // to collect JS errors
-            'clientOptions' => [ // raven-js config parameter
-                'whitelistUrls' => [ // collect JS errors from these urls
-                    'http://hrm-firdows.c9users.io',
-                    'https://hrm-firdows.c9users.io',
-                ],
-            ],
-        ],
+        // 'sentry' => [
+        //     //'enabled' => false,
+        //     'class' => 'mito\sentry\SentryComponent',
+        //     'dsn' => 'https://6d51c95395184944818654b3facd932c:9c72c92517e54d39b422dd50dbb98376@sentry.io/138338', // private DSN
+        //     //'environment' => YII_CONFIG_ENVIRONMENT, // if not set, the default is `development`
+        //     'jsNotifier' => true, // to collect JS errors
+        //     'clientOptions' => [ // raven-js config parameter
+        //         'whitelistUrls' => [ // collect JS errors from these urls
+        //             'http://hrm-firdows.c9users.io',
+        //             'https://hrm-firdows.c9users.io',
+        //         ],
+        //     ],
+        // ],
         
         'log' => [
-            // 'traceLevel' => YII_DEBUG ? 3 : 0,
-            // 'targets' => [
-            //     [
-            //         'class' => 'yii\log\FileTarget',
-            //         'levels' => ['error', 'warning'],
-            //     ],
-            // ],
-            
+            'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 [
-                    'class' => 'mito\sentry\SentryTarget',
+                    'class' => 'yii\log\FileTarget',
                     'levels' => ['error', 'warning'],
-                    'except' => [
-                        'yii\web\HttpException:404',
-                    ],
-                ]
+                ],
             ],
+            
+            // 'targets' => [
+            //     [
+            //         'class' => 'mito\sentry\SentryTarget',
+            //         'levels' => ['error', 'warning'],
+            //         'except' => [
+            //             'yii\web\HttpException:404',
+            //         ],
+            //     ]
+            // ],
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
