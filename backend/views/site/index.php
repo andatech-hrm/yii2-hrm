@@ -34,14 +34,14 @@ $module = $this->context->module->id;
             </div>
             <div class="col-xs-12 col-md-4">
                 <div class="tile-stats text-center">
-                    <div style="font-size: 5em;"><i class="fa fa-bed"></i></div>
+                    <div style="font-size: 5em;"><i class="fa fa-calendar"></i></div>
                     <h1><?= Html::a(Yii::t('andahrm/person', 'Leave'), ['/leave/default'], ['style' => 'font-weight:bold;']); ?></h1>
                 </div>
             </div>
             <div class="col-xs-12 col-md-4">
                 <div class="tile-stats text-center">
-                    <div style="font-size: 5em;"><i class="fa fa-briefcase"></i></div>
-                    <h1><?= Html::a(Yii::t('andahrm/person', 'Leave'), ['/leave/default'], ['style' => 'font-weight:bold;']); ?></h1>
+                    <div style="font-size: 5em;"><i class="fa fa-file-text-o"></i></div>
+                    <h1><?= Html::a(Yii::t('andahrm/leave', 'Create Leave'), ['/leave/default/create'], ['style' => 'font-weight:bold;']); ?></h1>
                 </div>
             </div>
         </div>
