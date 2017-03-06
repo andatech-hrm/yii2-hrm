@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f4f386b757ac10aac4672f4ca81509ff",
-    "content-hash": "c1505f259b23c1c5175dc4a544c18ab1",
+    "hash": "750d1a4aa5d29bd7e0a01481f102170f",
+    "content-hash": "337ec8608596a616071817b11e7fc01b",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -716,6 +716,48 @@
             "time": "2017-01-21 09:56:45"
         },
         {
+            "name": "andatech/yii2-timeago",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech/yii2-timeago.git",
+                "reference": "056677b54762e454fc1a20801d443197a63b4f18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech/yii2-timeago/zipball/056677b54762e454fc1a20801d443197a63b4f18",
+                "reference": "056677b54762e454fc1a20801d443197a63b4f18",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery-timeago": "1.*",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "anda\\timeago\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nghia Nguyen",
+                    "email": "yiidevelop@gmail.com"
+                }
+            ],
+            "description": "Timeago is a jQuery plugin that makes it easy to support automatically updating fuzzy timestamps. Forked from @rmm5t for Yii2 framework.",
+            "keywords": [
+                "jquery",
+                "timeago",
+                "yii"
+            ],
+            "time": "2017-03-04 18:10:55"
+        },
+        {
             "name": "andatech/yii2-user",
             "version": "dev-master",
             "source": {
@@ -1187,6 +1229,35 @@
                 "javascript",
                 "jquery",
                 "library"
+            ]
+        },
+        {
+            "name": "bower-asset/jquery-timeago",
+            "version": "v1.5.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rmm5t/jquery-timeago.git",
+                "reference": "180864a9c544a49e43719b457250af216d5e4c3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rmm5t/jquery-timeago/zipball/180864a9c544a49e43719b457250af216d5e4c3a",
+                "reference": "180864a9c544a49e43719b457250af216d5e4c3a",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.4"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": "jquery.timeago.js",
+                "bower-asset-ignore": [
+                    "test",
+                    "vendor"
+                ]
+            },
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -5087,6 +5158,56 @@
             "time": "2016-07-22 15:25:27"
         },
         {
+            "name": "yii2tech/ar-softdelete",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yii2tech/ar-softdelete.git",
+                "reference": "b6595495200ef1e0a62755ff61e52f11f0b04d57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yii2tech/ar-softdelete/zipball/b6595495200ef1e0a62755ff61e52f11f0b04d57",
+                "reference": "b6595495200ef1e0a62755ff61e52f11f0b04d57",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii2tech\\ar\\softdelete\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "Provides support for ActiveRecord soft delete in Yii2",
+            "keywords": [
+                "active",
+                "delete",
+                "integrity",
+                "record",
+                "smart",
+                "soft",
+                "yii2"
+            ],
+            "time": "2016-12-08 14:07:12"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "dev-master",
             "source": {
@@ -7684,7 +7805,8 @@
         "andatech-hrm/yii2-organizational-structure": 20,
         "andatech-hrm/yii2-insignia": 20,
         "andatech-hrm/yii2-report": 20,
-        "kuakling/yii2-datepicker-buddhist": 20
+        "kuakling/yii2-datepicker-buddhist": 20,
+        "andatech/yii2-timeago": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

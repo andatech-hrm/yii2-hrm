@@ -55,7 +55,9 @@
         "miloschuman/yii2-highcharts-widget": "*",
         "2amigos/yii2-chartjs-widget": "~2.0",
         "kuakling/yii2-datepicker-buddhist": "dev-master",
-        "dixonsatit/yii2-thai-year-formatter": "*"
+        "dixonsatit/yii2-thai-year-formatter": "*",
+        "andatech/yii2-timeago": "dev-master",
+        "yii2tech/ar-softdelete": "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",

@@ -64,12 +64,12 @@ $person = PersonApi::instance($user->id);
                             <ul class="dropdown-menu dropdown-usermenu pull-right">
                                 <li><?= Html::a('<i class="fa fa-address-card pull-right"></i> '.Yii::t('andahrm','Profile'), ['/profile']); ?>
                                 </li>
-                                <li>
-                                    <a href="javascript:;">
-                                        <span class="badge bg-red pull-right">50%</span>
-                                        <span><?=Yii::t('andahrm','Settings')?></span>
-                                    </a>
-                                </li>
+                                <!--<li>-->
+                                <!--    <a href="javascript:;">-->
+                                <!--        <span class="badge bg-red pull-right">50%</span>-->
+                                <!--        <span><?=Yii::t('andahrm','Settings')?></span>-->
+                                <!--    </a>-->
+                                <!--</li>-->
                                 <li>
                                     <?= Html::a(Yii::t('andahrm','Help'), ['/site/help']); ?>
                                 </li>
@@ -124,6 +124,12 @@ $person = PersonApi::instance($user->id);
                 ]);
             endforeach;
             ?>
+            
+<?php
+// $route = rtrim(Yii::$app->urlManager->parseRequest(Yii::$app->request)[0], '/');
+// echo $route;
+
+?>
             <?= $content ?>
         </div>
         <!-- /page content -->
@@ -154,7 +160,7 @@ $currentMenu = (isset($this->params['current-menu'])) ? $this->params['current-m
 $this->registerJs("
 
 $('.nav.side-menu a').click(function(){
-    if ($(this).is('[href$=\"#\"]')) {
+    if ($(this).next().is('ul')) {
     //alert('href');
         return false;
     }
@@ -167,9 +173,9 @@ $(document).on('submit', 'form', function(){
      submitBtns.addClass('disabled');
 });
 
-var \$SIDEBAR_MENU = $('#sidebar-menu');
-var actionIndex = '".$currentMenu."';
-\$SIDEBAR_MENU.find('a[href=\"'+actionIndex+'\"]').parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
+// var \$SIDEBAR_MENU = $('#sidebar-menu');
+// var actionIndex = '".$currentMenu."';
+// \$SIDEBAR_MENU.find('a[href=\"'+actionIndex+'\"]').parent('li').addClass('current-page').parents('ul').slideDown().parent().addClass('active');
 
 // \$('a').click(function(){
 //     var \$HREF = $(this).attr('href');

@@ -33,12 +33,12 @@ $total = $dataCommander->getCount()
     + $dataDirector->getCount() 
     + $dataDirectorCancel->getCount();
 
-$models = ArrayHelper::merge(
-    $dataCommander->getModels(),
-    $dataCommanderCancel->getModels(),
-    $dataInspactor->getModels(),
-    $dataDirector->getModels(),
-    $dataDirectorCancel->getModels()
+$dataModels = ArrayHelper::merge(
+    ['/leave/commander/consider'=>$dataCommander->getModels()],
+    ['/leave/commander/consider-cancel'=>$dataCommanderCancel->getModels()],
+    ['/leave/inspector/consider'=>$dataInspactor->getModels()],
+    ['/leave/director/consider'=>$dataDirector->getModels()],
+    ['/leave/director/consider-cancel'=>$dataDirectorCancel->getModels()]
 );
     
     //print_r($models);
@@ -56,24 +56,43 @@ $models = ArrayHelper::merge(
         
     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
         
-        <?php foreach($models as $model):?>
-        <li>
-            <a href="<?=Url::to(['/leave/default/view','id'=>$model->id])?>">
-                <span class="image">
-                    <?=Html::img($model->createdBy->photoLast)?>
-                </span>
-                <span>
-                    <span><?=$model->createdBy->fullname?></span><br/>
+        <?php
+        if($dataModels):
+        foreach($dataModels as $link => $models):
+            foreach($models as $model):?>
+            <li>
+                <a href="<?=Url::to([$link,'id'=>$model->id])?>">
+                    <span class="image">
+                        <?=Html::img($model->createdBy->photoLast)?>
+                    </span>
+                    <span>
+                        <span><?=$model->createdBy->fullname?></span>
+                        <span class="time"><?= \anda\timeago\TimeAgo::widget(['timestamp' => $model->updated_at])?></span>
+                    </span>   
+                    <span class="message">
+                        พิจารณา<?=$model->leaveType->title;?>
+                    </span>
                     
-                </span>   
-                <span class="message">
-                    ขอ<?=$model->leaveType->title;?>
-                </span>
-                <span class="time"><?=Yii::$app->formatter->asDateTime($model->updated_at)?></span>
-            </a>
-        </li>
-        <?php endforeach;?>
+                </a>
+            </li>
+            <?php
+            endforeach;
+        endforeach;
+        endif;
         
+        
+        
+        
+       
+        ?>
+        <li>
+            <div class="text-center">
+                 <a href="<?=Url::to(['/leave/'])?>">
+                    <strong><?=Yii::t('andahrm','See All ');?></strong>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+        </li>
     </ul>
 </li>
 

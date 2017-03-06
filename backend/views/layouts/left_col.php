@@ -1,11 +1,10 @@
 <?php
 use yii\helpers\Html;
 use mdm\admin\components\Helper;
-use yiister\gentelella\widgets\Menu;
-//use dmstr\widgets\Menu;
+//use yiister\gentelella\widgets\Menu;
+use dmstr\widgets\Menu;
 use yii\helpers\ArrayHelper;
 ?>
-
 
 <div class="left_col scroll-view">
     <div class="navbar nav_title" style="border: 0;">
@@ -36,38 +35,79 @@ use yii\helpers\ArrayHelper;
 
         <div class="menu_section">
             <h3><?= current($person->getRoles()); ?></h3>
+            
+            
+            
             <?php
           $menuItemsSelf = [];
-          $menuItemsSelf[] = ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "home"];
-          $menuItemsSelf[] = ["label" => $person->fullname, "url" => ["/profile/"], "icon" => "user-circle-o"];
+          $menuItemsSelf[] = ["label" => Yii::t('andahrm','Home'), "url" => ["/"], "icon" => "fa fa-home"];
+          $menuItemsSelf[] = ["label" => $person->fullname, "url" => ["/profile/"], "icon" => "fa fa-user-circle-o"];
           
           
           $menuItems = [];
           //if (Yii::$app->user->can('manage-person')){
-            $menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
+            //$menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
           //}
-         $menuItems[] =  ["label" => Yii::t('andahrm','Development'), "url" => ["/development/"],"icon" => "line-chart"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Insignia'), "url" => ["/insignia/"],"icon" => "star"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Structure'), "url" => ["/structure/"], "icon" => "sitemap"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "usd"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Salary Calculation'), "url" => ["/salary-calculation/"], "icon" => "calculator"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "calendar"];
-         $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "book"];
+          
+          
+         $menuItems[] =  ["label" => Yii::t('andahrm','Manage Structure'), "url" => ["/structure/"], "icon" => "fa fa-sitemap"];
          $menuItems[] =  [
-             "label" => Yii::t('andahrm','Report'), "url" => '#', "icon" => "book",
+             "label" => Yii::t('andahrm','Manage Person'), "url" => ["/person/"],"icon" => "fa fa-users",
              "items" => [
-                                [
-                                    "label" => Yii::t('andahrm','Person Report'),
-                                    "url" => ["/report/person/"],
-                                    "icon" => "users"
-                                ],
-                                [
-                                    "label" => Yii::t('andahrm','Leave Report'),
-                                    "url" => ["/report/leave/"],
-                                    "icon" => "users"
-                                ],
-                        ]
+                    [
+                        "label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "fa fa-users"
+                    ],
+                    [
+                        "label" => Yii::t('andahrm','Development'), "url" => ["/development/"],"icon" => "fa fa-line-chart"
+                    ],
+                    [
+                        "label" => Yii::t('andahrm','Insignia'), "url" => ["/insignia/"],"icon" => "fa fa-star"
+                    ],
+                    [
+                        "label" => Yii::t('andahrm','Defect'), "url" => ["/person/defect"],"icon" => "fa fa-thumbs-o-down"
+                    ],
+                   
+            ]
+         
+         
          ];
+         $menuItems[] =  ["label" => Yii::t('andahrm','Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar"];
+         
+         $menuItems[] =  [
+             "label" => Yii::t('andahrm','Manage Salary'), "url" => ["/position-salary/"], "icon" => "fa fa-usd",
+             "items" => [
+                 [
+                     "label" => Yii::t('andahrm','Position-salary'), "url" => ["/position-salary/"], "icon" => "fa fa-usd",
+                 ],
+                 [
+                     "label" => Yii::t('andahrm','Salary Calculation'), "url" => ["/salary-calculation/"], "icon" => "fa fa-calculator"],
+                 ]
+             
+             ];
+         //$menuItems[] =  ["label" => Yii::t('andahrm','Salary Calculation'), "url" => ["/salary-calculation/"], "icon" => "fa fa-calculator"];
+         
+         
+         $menuItems[] =  [
+             "label" => Yii::t('andahrm','Report'), "url" => ["/report"], "icon" => "fa fa-book",
+             "items" => [
+                            [
+                                "label" => Yii::t('andahrm','Person Report'),
+                                "url" => ["/report/person/"],
+                                "icon" => "fa fa-users",
+                                //'active' => (strpos($this->context->route,'report/person') !== false)?true:false
+                            ],
+                            [
+                                "label" => Yii::t('andahrm','Leave Report'),
+                                "url" => ["/report/leave/"],
+                                "icon" => "fa fa-users"
+                            ],
+                        ]   
+                    ];
+         //$menuItems[] =  ["label" => Yii::t('andahrm','Insignia'), "url" => ["/insignia/"],"icon" => "star"];
+         
+         //$menuItems[] =  ["label" => Yii::t('andahrm','Development'), "url" => ["/development/"],"icon" => "line-chart"];
+         $menuItems[] =  ["label" => Yii::t('andahrm','Edoc'), "url" => ["/edoc/"], "icon" => "fa fa-book"];
+         
                           /* $menuItems[] = ["label" => "Error page", "url" => ["site/error-page"], "icon" => "close"],
                         [
                             "label" => "Widgets",
@@ -129,19 +169,44 @@ use yii\helpers\ArrayHelper;
                         ],*/
           
           
-             //$menuItems = Helper::filter($menuItems);
-//                     $newMenu = [];
-//                     foreach($menuItems as $k=>$menu){
-//                       $newMenu[$k]=$menu;
-//                       $newMenu[$k]['url'][0] = rtrim($menu['url'][0], "/");
-//                     }
-//                     $menuItems=$newMenu;
-          
+            //  $menuItems = Helper::filter($menuItems);
+            //         $newMenu = [];
+            //         foreach($menuItems as $k=>$menu){
+            //           $newMenu[$k]=$menu;
+            //           $newMenu[$k]['url'][0] = rtrim($menu['url'][0], "/");
+            //         }
+            //         $menuItems=$newMenu;
+            
+            
+        //     $newMenu = [];
+        //     foreach($menuItems as $k=>$menu){
+        //           $newMenu[$k]=$menu;
+        //         //   echo $menu['url'][0]." ";
+        //         //   echo $this->context->route." <br/>";
+        //           //$newMenu[$k]['active'] = isActive($menu['url']);
+        //           $newMenu[$k]['active'] = (strpos($this->context->route,trim($menu['url'][0],'/')) !== false)?true:false;
+                  
+                  
+        //         if(isset($menu['items'])){
+        //             foreach($menu['items'] as $sk=>$sub_menu){
+        //                     //echo $sub_menu['url'][0]." ";
+        //                     //echo $this->context->route.strpos($this->context->route,trim($sub_menu['url'][0],'/'))." <br/>";
+        //               //$newMenu[$k]['item'][$sk]['active']= isActive($sub_menu['url']);
+        //               $newMenu[$k]['item'][$sk]['active']= (strpos($this->context->route,trim($sub_menu['url'][0],'/')) !== false)?true:false;
+        //             }
+        //         }
+        //     }
+        //     // echo "<pre>";
+        //     // print_r($newMenu);
+        //     // exit();
+        //   $menuItems=$newMenu;
           
             $menuItems=ArrayHelper::merge($menuItemsSelf,$menuItems);
             echo Menu::widget(
                 [
-                 //'options' => ['class' => 'nav side-menu'],
+                 'options' => ['class' => 'nav side-menu'],
+                 'submenuTemplate' => "\n<ul class='nav child_menu' {show}>\n{items}\n</ul>\n",
+                 'activeCssClass' => 'current-page',
                  //'encodeLabels' => true,
                     //"activeCssClass" => "current-page",
                     "items" => $menuItems,
@@ -185,3 +250,23 @@ use yii\helpers\ArrayHelper;
     </div>
     <!-- /menu footer buttons -->
 </div>
+
+<?php
+
+
+// function isActive($routes = array())
+// {
+//     if (Yii::$app->requestedRoute == "" && count($routes) == 0){
+//         return true;
+//     }
+//     $routeCurrent = Yii::$app->requestedRoute;
+//     foreach ($routes as $route) {
+//         $pattern = sprintf('~%s~', preg_quote($route));
+//         if (preg_match($pattern, $routeCurrent)) {
+//             return true;
+//         }
+//     }
+//     return false;
+// }
+
+?>
