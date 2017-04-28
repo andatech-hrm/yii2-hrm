@@ -169,7 +169,7 @@ use yii\helpers\ArrayHelper;
                         ],*/
           
           
-            //  $menuItems = Helper::filter($menuItems);
+             $menuItems = Helper::filter($menuItems);
             //         $newMenu = [];
             //         foreach($menuItems as $k=>$menu){
             //           $newMenu[$k]=$menu;
