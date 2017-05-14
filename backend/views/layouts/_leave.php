@@ -51,7 +51,7 @@ $dataModels = ArrayHelper::merge(
             <i class="fa fa-calendar-check-o"></i>
             <?php if($total):?>
             <span class="badge bg-red"><?=$total?></span>
-            <?php endif();?>
+            <?php endif;?>
         </a>
         
         
