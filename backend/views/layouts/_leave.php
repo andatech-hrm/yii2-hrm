@@ -49,7 +49,9 @@ $dataModels = ArrayHelper::merge(
 <li role="presentation" class="dropdown">
         <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
             <i class="fa fa-calendar-check-o"></i>
+            <?php if($total):?>
             <span class="badge bg-red"><?=$total?></span>
+            <?php endif();?>
         </a>
         
         
