@@ -67,13 +67,14 @@
         "codeception/verify": "~0.3.1"
     },
     "config": {
-        "process-timeout": 1800
-    },
-    "extra": {
+        "process-timeout": 1800,
         "asset-installer-paths": {
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
+    },
+    "extra": {
+        
     },
     "scripts": {
         "post-install-cmd": "php init --env=Development --overwrite=n"
