@@ -19,7 +19,7 @@ use yii\helpers\ArrayHelper;
     <!-- menu prile quick info -->
     <div class="profile">
         <div class="profile_pic">
-            <img src="<?= $person->getPhotoLast(); ?>" alt="..." class="img-circle profile_img">
+            <img src="<?= $person->getPhoto(); ?>" alt="..." class="img-circle profile_img">
         </div>
         <div class="profile_info">
             <span><?=Yii::t('app','Welcome')?>,</span>
