@@ -26,6 +26,8 @@ Thumbs.db
 /backend/web/assets
 /frontend/runtime
 /backend/runtime
+/frontend/runtime/*
+/backend/runtime/*
 
 # composer itself is not needed
 composer.phar

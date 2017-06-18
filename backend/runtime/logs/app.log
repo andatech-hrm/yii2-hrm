@@ -60140,3 +60140,315 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1497754433.959
     'REQUEST_TIME' => 1497754433
 ]
+2017-06-18 14:44:12 [10.240.1.12][2][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-development/views/default/index.php:110
+2017-06-18 14:44:12 [10.240.1.12][2][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9ou0f39t7nj50l7u7obot0nd96'
+    '_csrf-backend' => 'c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9\";}'
+    'menuIsCollapsed' => 'true'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'krajeeGridExportSalt' => '$QXGN}îóš—!\"ÛümzÐÿ’X¢Ç€g6Œël'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-firdows.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3016.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-firdows.c9users.io/office/person/default/create?step=4&id=21'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=9ou0f39t7nj50l7u7obot0nd96; _csrf-backend=c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9%22%3B%7D; menuIsCollapsed=true; XDEBUG_SESSION=cloud9ide; _identity-backend=5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-firdows.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-firdows.c9users.io'
+    'SERVER_ADDR' => '172.17.0.16'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.12'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '57244'
+    'REDIRECT_URL' => '/backend/web//development'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497771852.481
+    'REQUEST_TIME' => 1497771852
+]
+2017-06-18 14:44:16 [10.240.0.230][2][9ou0f39t7nj50l7u7obot0nd96][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "development/trash/index".' in /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Module.php:531
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php(102): yii\base\Module->runAction('development/tra...', Array)
+#1 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /home/ubuntu/workspace/backend/web/index.php(19): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'à¹„à¸¡à¹ˆà¸žà¸šà¸«à¸™à¹‰à¸²' in /home/ubuntu/workspace/vendor/yiisoft/yii2/web/Application.php:114
+Stack trace:
+#0 /home/ubuntu/workspace/vendor/yiisoft/yii2/base/Application.php(379): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /home/ubuntu/workspace/backend/web/index.php(19): yii\base\Application->run()
+#2 {main}
+2017-06-18 14:44:16 [10.240.0.230][2][9ou0f39t7nj50l7u7obot0nd96][info][application] $_COOKIE = [
+    'advanced-backend' => '9ou0f39t7nj50l7u7obot0nd96'
+    '_csrf-backend' => 'c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9\";}'
+    'menuIsCollapsed' => 'true'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'krajeeGridExportSalt' => '$QXGN}îóš—!\"ÛümzÐÿ’X¢Ç€g6Œël'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-firdows.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3016.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-firdows.c9users.io/office/development'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=9ou0f39t7nj50l7u7obot0nd96; _csrf-backend=c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9%22%3B%7D; menuIsCollapsed=true; XDEBUG_SESSION=cloud9ide; _identity-backend=5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-firdows.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-firdows.c9users.io'
+    'SERVER_ADDR' => '172.17.0.16'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.230'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '51564'
+    'REDIRECT_URL' => '/backend/web//development/trash/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development/trash/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497771856.164
+    'REQUEST_TIME' => 1497771856
+]
+2017-06-18 14:44:19 [10.240.1.30][2][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-development/views/default/index.php:110
+2017-06-18 14:44:19 [10.240.1.30][2][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9ou0f39t7nj50l7u7obot0nd96'
+    '_csrf-backend' => 'c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9\";}'
+    'menuIsCollapsed' => 'true'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'krajeeGridExportSalt' => '$QXGN}îóš—!\"ÛümzÐÿ’X¢Ç€g6Œël'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-firdows.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3016.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-firdows.c9users.io/office/person/default/create?step=4&id=21'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=9ou0f39t7nj50l7u7obot0nd96; _csrf-backend=c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9%22%3B%7D; menuIsCollapsed=true; XDEBUG_SESSION=cloud9ide; _identity-backend=5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-firdows.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-firdows.c9users.io'
+    'SERVER_ADDR' => '172.17.0.16'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.30'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '51956'
+    'REDIRECT_URL' => '/backend/web//development'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497771859.202
+    'REQUEST_TIME' => 1497771859
+]
+2017-06-18 14:44:33 [10.240.1.30][2][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-development/views/default/index.php:110
+2017-06-18 14:44:33 [10.240.1.30][2][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9ou0f39t7nj50l7u7obot0nd96'
+    '_csrf-backend' => 'c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9\";}'
+    'menuIsCollapsed' => 'true'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'krajeeGridExportSalt' => '$QXGN}îóš—!\"ÛümzÐÿ’X¢Ç€g6Œël'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-firdows.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3016.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'https://hrm-firdows.c9users.io/office/person/default/create?step=4&id=21'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=9ou0f39t7nj50l7u7obot0nd96; _csrf-backend=c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9%22%3B%7D; menuIsCollapsed=true; XDEBUG_SESSION=cloud9ide; _identity-backend=5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-firdows.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-firdows.c9users.io'
+    'SERVER_ADDR' => '172.17.0.16'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.1.30'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '52100'
+    'REDIRECT_URL' => '/backend/web//development'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497771873.394
+    'REQUEST_TIME' => 1497771873
+]
+2017-06-18 14:45:22 [10.240.0.213][2][-][error][yii\i18n\PhpMessageSource::loadFallbackMessages] The message file for category 'kvexport' does not exist: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th-TH/kvexport.php Fallback file does not exist as well: /home/ubuntu/workspace/vendor/kartik-v/yii2-export/messages/th/kvexport.php
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:818
+    in /home/ubuntu/workspace/vendor/kartik-v/yii2-export/ExportMenu.php:673
+    in /home/ubuntu/workspace/vendor/andatech-hrm/yii2-development/views/project/index.php:67
+2017-06-18 14:45:22 [10.240.0.213][2][-][info][application] $_COOKIE = [
+    'advanced-backend' => '9ou0f39t7nj50l7u7obot0nd96'
+    '_csrf-backend' => 'c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9\";}'
+    'menuIsCollapsed' => 'true'
+    'XDEBUG_SESSION' => 'cloud9ide'
+    '_identity-backend' => '5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[2,\"M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+    'krajeeGridExportSalt' => '$QXGN}îóš—!\"ÛümzÐÿ’X¢Ç€g6Œël'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'hrm-firdows.c9users.io'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3016.0 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=9ou0f39t7nj50l7u7obot0nd96; _csrf-backend=c3aef8871e1700ac291170a2abd4a61eee9a7f45e32c128df67cf4c29154036ca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22ZnXfE2yofnzaKYiMaOtd0QUNOgQwQOC9%22%3B%7D; menuIsCollapsed=true; XDEBUG_SESSION=cloud9ide; _identity-backend=5269f59e53cf381556052e4906e3b14efc9479f06057746829dddf20b33d40dda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22M6IC7yVpxs4oYJ3KgAke-qx06yyYw-Pw%22%2C2592000%5D%22%3B%7D'
+    'HTTP_X_FORWARDED_PROTO' => 'https'
+    'HTTP_X_FORWARDED_PORT' => '443'
+    'HTTP_X_REGION' => 'ae'
+    'HTTP_X_FORWARDED_FOR' => '202.29.145.193'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => '/home/ubuntu/.nvm/versions/node/v4.6.1/bin:/usr/local/rvm/gems/ruby-2.3.0/bin:/usr/local/rvm/gems/ruby-2.3.0@global/bin:/usr/local/rvm/rubies/ruby-2.3.0/bin:/mnt/shared/bin:/home/ubuntu/workspace/node_modules/.bin:/home/ubuntu/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/mnt/shared/sbin:/opt/gitl:/opt/go/bin:/mnt/shared/c9/app.nw/bin:/usr/local/rvm/bin'
+    'LD_LIBRARY_PATH' => '~/.c9/local/lib'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.7 (Ubuntu) Server at hrm-firdows.c9users.io Port 443</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.7 (Ubuntu)'
+    'SERVER_NAME' => 'hrm-firdows.c9users.io'
+    'SERVER_ADDR' => '172.17.0.16'
+    'SERVER_PORT' => '443'
+    'REMOTE_ADDR' => '10.240.0.213'
+    'DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'REQUEST_SCHEME' => 'https'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/home/ubuntu/workspace'
+    'SERVER_ADMIN' => '[no address given]'
+    'SCRIPT_FILENAME' => '/home/ubuntu/workspace/backend/web/index.php'
+    'REMOTE_PORT' => '33358'
+    'REDIRECT_URL' => '/backend/web//development/project'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/office/development/project'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1497771922.487
+    'REQUEST_TIME' => 1497771922
+]
