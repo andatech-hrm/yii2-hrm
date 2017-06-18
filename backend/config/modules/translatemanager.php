@@ -20,7 +20,6 @@ return  [
             'kvbase',
             'kvdialog',
             'kvgrid',
-            'kvexport',
             'language',
             'model',
             'array',
