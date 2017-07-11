@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "750d1a4aa5d29bd7e0a01481f102170f",
-    "content-hash": "337ec8608596a616071817b11e7fc01b",
+    "content-hash": "b7f49610abc0537508895e994269c58d",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -65,7 +64,7 @@
                 "yii 2",
                 "yii2"
             ],
-            "time": "2016-07-09 19:09:35"
+            "time": "2016-07-09T19:09:35+00:00"
         },
         {
             "name": "almasaeed2010/adminlte",
@@ -105,7 +104,7 @@
                 "theme",
                 "web"
             ],
-            "time": "2017-01-08 21:03:57"
+            "time": "2017-01-08T21:03:57+00:00"
         },
         {
             "name": "andatech-hrm/yii2-app-setting",
@@ -155,6 +154,49 @@
                 "yii2"
             ],
             "time": "2017-01-26 09:50:32"
+        },
+        {
+            "name": "andatech-hrm/yii2-datepicker-buddhist",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-datepicker-buddhist.git",
+                "reference": "7d0c4c0890b4495f34166d819cced316f4fb13e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-datepicker-buddhist/zipball/7d0c4c0890b4495f34166d819cced316f4fb13e0",
+                "reference": "7d0c4c0890b4495f34166d819cced316f4fb13e0",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\datepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 Datepicker Buddhist",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-07-11 02:55:58"
         },
         {
             "name": "andatech-hrm/yii2-development",
@@ -851,7 +893,7 @@
                 "wizard",
                 "yii2"
             ],
-            "time": "2015-07-26 20:46:28"
+            "time": "2015-07-26T20:46:28+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -1633,7 +1675,7 @@
                 "gravatar",
                 "yii"
             ],
-            "time": "2013-12-10 17:49:58"
+            "time": "2013-12-10T17:49:58+00:00"
         },
         {
             "name": "components/bootstrap",
@@ -1701,7 +1743,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-01-22 12:14:01"
+            "time": "2015-01-22T12:14:01+00:00"
         },
         {
             "name": "components/jquery",
@@ -1841,7 +1883,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2016-12-09 03:16:30"
+            "time": "2016-12-09T03:16:30+00:00"
         },
         {
             "name": "drsdre/yii2-wizardwidget",
@@ -1933,7 +1975,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-01-13 12:31:37"
+            "time": "2017-01-13T12:31:37+00:00"
         },
         {
             "name": "firdows/yii2-orgchart",
@@ -2028,7 +2070,7 @@
                 "font",
                 "icon"
             ],
-            "time": "2016-10-24 15:52:54"
+            "time": "2016-10-24T15:52:54+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -2085,7 +2127,7 @@
                 "image manipulation",
                 "image processing"
             ],
-            "time": "2015-09-19 16:54:05"
+            "time": "2015-09-19T16:54:05+00:00"
         },
         {
             "name": "istvan-ujjmeszaros/bootstrap-duallistbox",
@@ -2309,7 +2351,7 @@
                 "option",
                 "select"
             ],
-            "time": "2015-12-16 18:15:01"
+            "time": "2015-12-16T18:15:01+00:00"
         },
         {
             "name": "kartik-v/yii2-date-range",
@@ -2894,7 +2936,7 @@
                 "widget",
                 "yii2"
             ],
-            "time": "2015-06-17 17:34:48"
+            "time": "2015-06-17T17:34:48+00:00"
         },
         {
             "name": "kartik-v/yii2-widget-activeform",
@@ -4040,7 +4082,7 @@
                 "translate",
                 "yii2"
             ],
-            "time": "2016-07-12 14:25:30"
+            "time": "2016-07-12T14:25:30+00:00"
         },
         {
             "name": "maxmirazh33/yii2-uploadable-cropable-image",
@@ -4648,7 +4690,7 @@
                 "font",
                 "yii"
             ],
-            "time": "2017-01-11 14:05:47"
+            "time": "2017-01-11T14:05:47+00:00"
         },
         {
             "name": "sentry/sentry",
@@ -4706,7 +4748,7 @@
                 "log",
                 "logging"
             ],
-            "time": "2016-09-29 21:31:50"
+            "time": "2016-09-29T21:31:50+00:00"
         },
         {
             "name": "setasign/fpdi",
@@ -4755,7 +4797,7 @@
                 "fpdi",
                 "pdf"
             ],
-            "time": "2015-11-30 10:53:14"
+            "time": "2015-11-30T10:53:14+00:00"
         },
         {
             "name": "softark/yii2-dual-listbox",
@@ -5453,7 +5495,7 @@
                 "imagine",
                 "yii2"
             ],
-            "time": "2016-11-03 19:28:39"
+            "time": "2016-11-03T19:28:39+00:00"
         },
         {
             "name": "yiisoft/yii2-jui",
@@ -5611,7 +5653,7 @@
                 "theme",
                 "yii2"
             ],
-            "time": "2016-08-01 03:18:02"
+            "time": "2016-08-01T03:18:02+00:00"
         }
     ],
     "packages-dev": [
@@ -5883,7 +5925,7 @@
                 }
             ],
             "description": "BDD assertion library for PHPUnit",
-            "time": "2016-08-29 22:49:25"
+            "time": "2016-08-29T22:49:25+00:00"
         },
         {
             "name": "doctrine/instantiator",
@@ -6199,7 +6241,7 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
-            "time": "2016-09-30 07:12:33"
+            "time": "2016-09-30T07:12:33+00:00"
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -6246,7 +6288,7 @@
                     "email": "me@mikevanriel.com"
                 }
             ],
-            "time": "2016-11-25 06:54:22"
+            "time": "2016-11-25T06:54:22+00:00"
         },
         {
             "name": "phpspec/php-diff",
@@ -6497,7 +6539,7 @@
             "keywords": [
                 "template"
             ],
-            "time": "2015-06-21 13:50:34"
+            "time": "2015-06-21T13:50:34+00:00"
         },
         {
             "name": "phpunit/php-timer",
@@ -6541,7 +6583,7 @@
             "keywords": [
                 "timer"
             ],
-            "time": "2016-05-12 18:03:57"
+            "time": "2016-05-12T18:03:57+00:00"
         },
         {
             "name": "phpunit/php-token-stream",
@@ -7140,7 +7182,7 @@
             ],
             "description": "Library that helps with managing the version number of Git-hosted PHP projects",
             "homepage": "https://github.com/sebastianbergmann/version",
-            "time": "2015-06-21 13:59:46"
+            "time": "2015-06-21T13:59:46+00:00"
         },
         {
             "name": "symfony/browser-kit",
@@ -7806,7 +7848,8 @@
         "andatech-hrm/yii2-insignia": 20,
         "andatech-hrm/yii2-report": 20,
         "kuakling/yii2-datepicker-buddhist": 20,
-        "andatech/yii2-timeago": 20
+        "andatech/yii2-timeago": 20,
+        "andatech-hrm/yii2-datepicker-buddhist": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

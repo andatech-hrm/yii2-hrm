@@ -57,7 +57,8 @@
         "kuakling/yii2-datepicker-buddhist": "dev-master",
         "dixonsatit/yii2-thai-year-formatter": "*",
         "andatech/yii2-timeago": "dev-master",
-        "yii2tech/ar-softdelete": "^1.0"
+        "yii2tech/ar-softdelete": "^1.0",
+        "andatech-hrm/yii2-datepicker-buddhist": "dev-master"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
