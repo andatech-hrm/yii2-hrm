@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "750d1a4aa5d29bd7e0a01481f102170f",
-    "content-hash": "337ec8608596a616071817b11e7fc01b",
+    "hash": "5201cd49c9494d835a399ca915314659",
+    "content-hash": "b7f49610abc0537508895e994269c58d",
     "packages": [
         {
             "name": "2amigos/yii2-chartjs-widget",
@@ -155,6 +155,49 @@
                 "yii2"
             ],
             "time": "2017-01-26 09:50:32"
+        },
+        {
+            "name": "andatech-hrm/yii2-datepicker-buddhist",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andatech-hrm/yii2-datepicker-buddhist.git",
+                "reference": "7d0c4c0890b4495f34166d819cced316f4fb13e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andatech-hrm/yii2-datepicker-buddhist/zipball/7d0c4c0890b4495f34166d819cced316f4fb13e0",
+                "reference": "7d0c4c0890b4495f34166d819cced316f4fb13e0",
+                "shasum": ""
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "andahrm\\datepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Surakit Choodet",
+                    "email": "kuakling@gmail.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ahamad Jedhu",
+                    "email": "ahamad.jedu@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 Datepicker Buddhist",
+            "keywords": [
+                "extension",
+                "yii2"
+            ],
+            "time": "2017-07-11 02:55:58"
         },
         {
             "name": "andatech-hrm/yii2-development",
@@ -7806,7 +7849,8 @@
         "andatech-hrm/yii2-insignia": 20,
         "andatech-hrm/yii2-report": 20,
         "kuakling/yii2-datepicker-buddhist": 20,
-        "andatech/yii2-timeago": 20
+        "andatech/yii2-timeago": 20,
+        "andatech-hrm/yii2-datepicker-buddhist": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

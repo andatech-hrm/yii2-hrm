@@ -84,7 +84,7 @@ return [
             'class' => 'andahrm\setting\components\Date'
         ],
         'formatter'=>[
-            'class'=>'kuakling\datepicker\components\ThaiYearFormatter',
+            'class'=>'andahrm\datepicker\components\ThaiYearFormatter',
         ],
         // 'pdf' => [
         //     'class' => Pdf::classname(),
