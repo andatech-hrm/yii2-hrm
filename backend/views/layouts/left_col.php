@@ -48,9 +48,63 @@ use yii\helpers\ArrayHelper;
           //if (Yii::$app->user->can('manage-person')){
             //$menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
           //}
+          $module = $this->context->module->id;
+ $controller = $this->context->id;
           
           
-         $menuItems[] =  ["label" => Yii::t('andahrm','Manage Structure'), "url" => ["/structure/"], "icon" => "fa fa-sitemap"];
+         $menuItems[] =  ["label" => Yii::t('andahrm','Manage Structure'), "url" => ["/structure/"], "icon" => "fa fa-sitemap",
+         "items" => [
+                    [
+                        "label" => Yii::t('andahrm/structure', 'Organiaztional Structure'), 
+                        "url" => ["/structure/default"],
+                        "icon" => "fa fa-users"
+                    ],
+                    [
+                            'label' => Yii::t('andahrm/structure', 'Positions'),
+                            'url' => ["/{$module}/position"],
+                            'icon' => 'fa fa-id-badge ',
+                            'active'=>($controller=="position"||$controller=="position-old")?"active":""
+                        ],
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Fiscal Years'),
+                            'url' => ["/{$module}/fiscal-year"],
+                            'icon' => 'fa fa-calendar'
+                        ], 
+                        
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Sections'),
+                            'url' => ["/{$module}/section"],
+                            'icon' => 'fa fa-group'
+                        ],  
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Person Types'),
+                            'url' => ["/{$module}/person-type"],
+                            'icon' => 'fa fa-vcard'
+                        ],                 
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Position Lines'),
+                            'url' => ["/{$module}/position-line"],
+                            'icon' => 'fa fa-pagelines'
+                        ],
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Position Types'),
+                            'url' => ["/{$module}/position-type"],
+                            'icon' => 'fa fa-user-circle'
+                        ], 
+                         [
+                            'label' => Yii::t('andahrm/structure', 'Position Levels'),
+                            'url' => ["/{$module}/position-level"],
+                            'icon' => 'fa fa-level-up '
+                        ], 
+                        
+                        [
+                            'label' => Yii::t('andahrm/structure', 'Base Salaries'),
+                            'url' => ["/{$module}/base-salary"],
+                            'icon' => 'fa fa-money'
+                        ],   
+                   
+            ]
+         ];
          $menuItems[] =  [
              "label" => Yii::t('andahrm','Manage Person'), "url" => ["/person/"],"icon" => "fa fa-users",
              "items" => [
