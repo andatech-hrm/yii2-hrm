@@ -61,45 +61,45 @@ use yii\helpers\ArrayHelper;
                     ],
                     [
                             'label' => Yii::t('andahrm/structure', 'Positions'),
-                            'url' => ["/{$module}/position"],
+                            'url' => ["/structure/position"],
                             'icon' => 'fa fa-id-badge ',
                             'active'=>($controller=="position"||$controller=="position-old")?"active":""
                         ],
                         [
                             'label' => Yii::t('andahrm/structure', 'Fiscal Years'),
-                            'url' => ["/{$module}/fiscal-year"],
+                            'url' => ["/structure/fiscal-year"],
                             'icon' => 'fa fa-calendar'
                         ], 
                         
                         [
                             'label' => Yii::t('andahrm/structure', 'Sections'),
-                            'url' => ["/{$module}/section"],
+                            'url' => ["/structure/section"],
                             'icon' => 'fa fa-group'
                         ],  
                         [
                             'label' => Yii::t('andahrm/structure', 'Person Types'),
-                            'url' => ["/{$module}/person-type"],
+                            'url' => ["/structure/person-type"],
                             'icon' => 'fa fa-vcard'
                         ],                 
                         [
                             'label' => Yii::t('andahrm/structure', 'Position Lines'),
-                            'url' => ["/{$module}/position-line"],
+                            'url' => ["/structure/position-line"],
                             'icon' => 'fa fa-pagelines'
                         ],
                         [
                             'label' => Yii::t('andahrm/structure', 'Position Types'),
-                            'url' => ["/{$module}/position-type"],
+                            'url' => ["/structure/position-type"],
                             'icon' => 'fa fa-user-circle'
                         ], 
                          [
                             'label' => Yii::t('andahrm/structure', 'Position Levels'),
-                            'url' => ["/{$module}/position-level"],
+                            'url' => ["/structure/position-level"],
                             'icon' => 'fa fa-level-up '
                         ], 
                         
                         [
                             'label' => Yii::t('andahrm/structure', 'Base Salaries'),
-                            'url' => ["/{$module}/base-salary"],
+                            'url' => ["/structure/base-salary"],
                             'icon' => 'fa fa-money'
                         ],   
                    
@@ -154,6 +154,11 @@ use yii\helpers\ArrayHelper;
                                 "label" => Yii::t('andahrm','Leave Report'),
                                 "url" => ["/report/leave/"],
                                 "icon" => "fa fa-users"
+                            ],
+                            [
+                                "label" => Yii::t('andahrm','Position Report'),
+                                "url" => ["/report/position/"],
+                                "icon" => "fa fa-sitemap"
                             ],
                         ]   
                     ];
