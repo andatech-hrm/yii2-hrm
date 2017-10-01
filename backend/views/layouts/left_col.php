@@ -49,7 +49,8 @@ use yii\helpers\ArrayHelper;
             //$menuItems[] =  ["label" => Yii::t('andahrm','Person'), "url" => ["/person/"],"icon" => "users"];
           //}
           $module = $this->context->module->id;
- $controller = $this->context->id;
+          $controller = $this->context->id;
+          $moduleController = "/{$module}/{$controller}";
           
           
          $menuItems[] =  ["label" => Yii::t('andahrm','Manage Structure'), "url" => ["/structure/"], "icon" => "fa fa-sitemap",
@@ -63,7 +64,7 @@ use yii\helpers\ArrayHelper;
                             'label' => Yii::t('andahrm/structure', 'Positions'),
                             'url' => ["/structure/position"],
                             'icon' => 'fa fa-id-badge ',
-                            'active'=>($controller=="position"||$controller=="position-old")?"active":""
+                            'active'=>($moduleController=="/structure/position"||$moduleController=="/structure/position-old")?"active":""
                         ],
                         [
                             'label' => Yii::t('andahrm/structure', 'Fiscal Years'),
