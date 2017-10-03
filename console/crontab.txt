@@ -1,0 +1,29 @@
+#################### Begin crontab
+crontab -e
+
+>> */1 * * * * /home/ubuntu/workspace/yii test >> /home/log/myscript.log
+# รันทุกนาที่ xx:01
+
+sudo service cron reload
+sudo service cron restart
+
+#################### Open log
+nano /etc/rsyslog.d/50-default.conf
+
+#cron.*
+## Uncomment
+
+sudo service rsyslog restart
+sudo service cron restart
+
+cat /var/log/cron.log
+
+
+##################### Run console from web
+## https://stackoverflow.com/questions/34264442/how-to-run-console-command-in-yii2-from-web
+
+ $test = new \console\controllers\TestController(fhir, Yii::$app); 
+ $test->runAction('index');
+
+$test = new \console\controllers\TestController(Yii::$app->controller->id, Yii::$app); 
+$test->actionIndex();
