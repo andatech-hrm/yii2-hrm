@@ -121,6 +121,9 @@ use yii\helpers\ArrayHelper;
                     [
                         "label" => Yii::t('andahrm','Defect'), "url" => ["/person/defect"],"icon" => "fa fa-thumbs-o-down"
                     ],
+                    [
+                        "label" => Yii::t('andahrm','Competency Information'), "url" => ["/person/competency-information"],"icon" => "fa fa-list"
+                    ],
                    
             ]
          
