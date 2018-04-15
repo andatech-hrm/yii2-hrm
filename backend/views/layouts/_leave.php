@@ -63,7 +63,7 @@ $dataModels = ArrayHelper::merge(
                             <span>
                                 <span><?= $model->createdBy->fullname ?></span>
                                 <span class="time">
-                                    <?php echo TimeAgo::widget(['timestamp' => $model->updated_at]); ?>
+                                    <?php //echo TimeAgo::widget(['timestamp' => $model->updated_at]); ?>
                                 </span>
                             </span>   
                             <span class="message">
