@@ -32,7 +32,7 @@ $dataDirectorCancel = $searchModel->search(Yii::$app->request->queryParams);
 $total = $dataCommander->getCount() + $dataCommanderCancel->getCount() + $dataInspactor->getCount() + $dataDirector->getCount() + $dataDirectorCancel->getCount();
 
 $dataModels = ArrayHelper::merge(
-                ['/leave/commander/consider' => $dataCommander->getModels()], ['/leave/commander/consider-cancel' => $dataCommanderCancel->getModels()], ['/leave/inspector/consider' => $dataInspactor->getModels()], ['/leave/director/consider' => $dataDirector->getModels()], ['/leave/director/consider-cancel' => $dataDirectorCancel->getModels()]
+                ['/leave/commander/consider' => $dataCommander->getModels()], ['/leave/commander/consider-cancel' => $dataCommanderCancel->getModels()], ['/leave/inspactor/consider' => $dataInspactor->getModels()], ['/leave/director/consider' => $dataDirector->getModels()], ['/leave/director/consider-cancel' => $dataDirectorCancel->getModels()]
 );
 
 //print_r($models);
@@ -41,29 +41,29 @@ $dataModels = ArrayHelper::merge(
 <li role="presentation" class="dropdown">
     <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
         <i class="fa fa-calendar-check-o"></i>
-        <?php if ($total): ?>
+<?php if ($total): ?>
             <span class="badge bg-red"><?= $total ?></span>
-        <?php endif; ?>
+<?php endif; ?>
     </a>
 
 
 
     <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
 
-        <?php
-        if ($dataModels):
-            foreach ($dataModels as $link => $models):
-                foreach ($models as $model):
-                    ?>
+<?php
+if ($dataModels):
+    foreach ($dataModels as $link => $models):
+        foreach ($models as $model):
+            ?>
                     <li>
                         <a href="<?= Url::to([$link, 'id' => $model->id]) ?>">
                             <span class="image">
-                                <?= Html::img($model->createdBy->photoLast) ?>
+                    <?= Html::img($model->createdBy->photoLast) ?>
                             </span>
                             <span>
                                 <span><?= $model->createdBy->fullname ?></span>
                                 <span class="time">
-                                    <?php //echo TimeAgo::widget(['timestamp' => $model->updated_at]); ?>
+            <?php //echo TimeAgo::widget(['timestamp' => $model->updated_at]);   ?>
                                 </span>
                             </span>   
                             <span class="message">
@@ -72,11 +72,11 @@ $dataModels = ArrayHelper::merge(
 
                         </a>
                     </li>
-                    <?php
-                endforeach;
-            endforeach;
-        endif;
-        ?>
+            <?php
+        endforeach;
+    endforeach;
+endif;
+?>
         <li>
             <div class="text-center">
                 <a href="<?= Url::to(['/leave/']) ?>">
