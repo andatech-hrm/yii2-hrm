@@ -15,7 +15,7 @@ return  [
         'ignoredCategories' => [
             'yii',
             'rbac-admin',
-            'kvexport',
+            //'kvexport',
             'kvtree',
             'kvbase',
             'kvdialog',
