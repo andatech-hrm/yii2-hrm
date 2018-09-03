@@ -80,7 +80,7 @@ $person = PersonApi::instance($user->id);
                         </li>
 
                         <?=$this->render('_notification')?>
-                        <?=$this->render('_leave')?>
+                        <?php echo $this->render('_leave')?>
 
                     </ul>
                 </nav>

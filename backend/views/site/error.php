@@ -8,6 +8,8 @@
 use yii\helpers\Html;
 
 $this->title = $name;
+echo yii\helpers\Url::current();
+echo $this->context->action;
 ?>
 <div class="site-error">
 
