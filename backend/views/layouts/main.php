@@ -71,6 +71,9 @@ $person = PersonApi::instance($user->id);
                                 <!--    </a>-->
                                 <!--</li>-->
                                 <li>
+                                    <?= Html::a(Yii::t('andahrm','Change Password'), ['/site/change-password']); ?>
+                                </li>
+                                <li>
                                     <?= Html::a(Yii::t('andahrm','Help'), ['/site/help']); ?>
                                 </li>
                                 <li>
