@@ -179,7 +179,7 @@ class DefaultController extends Controller {
     }
 
     public function actionGenPassword($start = 0) {
-        $step = 100;
+        $step = 50;
         $offset = $start + $step;
         $modelUser = User::find()
                 ->where(['NOT IN', 'id', ['2', '209']]);
@@ -187,19 +187,24 @@ class DefaultController extends Controller {
         $datas = [];
 //        print_r(Yii::$app->request->post());
 //        exit();
-        if (Yii::$app->request->post('ok')) {
+        if (Yii::$app->request->post('ok') || $start > 0) {
             $count = $modelUser->count();
-            $modelUser = $modelUser->limit($start)
-                    ->offset($offset)
+            $modelUser = User::find()
+                    ->where(['NOT IN', 'id', ['2', '209']]);
+            $modelUser = $modelUser->limit($step)
+                    ->offset($start)
                     ->all();
             $errors = [];
             foreach ($modelUser as $model) {
                 $new_password = "123456";
+//                print_r($model);
+//                exit();
                 if (isset($model->person) && $citizen_id = $model->person->citizen_id) {
                     $new_password = substr($citizen_id, -4);
                 }
                 $model->setPassword($new_password);
                 $model->generateAuthKey();
+                $model->status = User::STATUS_ACTIVE;
                 if (!$model->save()) {
                     $errors[] = $model->getErrors();
                 }
@@ -210,15 +215,18 @@ class DefaultController extends Controller {
                     'msg' => Yii::t('andahrm/leave', 'The system successfully sent.')
                 ]);
 
-                if ($count < $offset) {
-                    return $this->redirect(['gen-password', 'start' => $start]);
+                if ($count > $offset) {
+                    return $this->redirect(['gen-password', 'start' => $offset]);
                 } else {
                     return $this->redirect(['gen-password', 'success' => $count]);
+                    //return $this->redirect(['gen-password', 'start' => $offset]);
                 }
             } else {
                 print_r($errors);
             }
         }
+
+
         $modelUser = $modelUser->all();
         foreach ($modelUser as $model) {
             $data = [];

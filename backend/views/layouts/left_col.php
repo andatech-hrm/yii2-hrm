@@ -125,16 +125,16 @@ use yii\helpers\ArrayHelper;
                 ]
             ];
             if (Yii::$app->user->can('admin')) {
-                 
-      $active = false;
-      switch($module.'/'.$controller){
-          case $module.'/day-off':
-          case $module.'/type':
-          case $module.'/permission':
-          case $module.'/related':
-            $active = true;
-          break;
-      }
+
+                $active = false;
+                switch ($module . '/' . $controller) {
+                    case $module . '/day-off':
+                    case $module . '/type':
+                    case $module . '/permission':
+                    case $module . '/related':
+                        $active = true;
+                        break;
+                }
                 $menuItems[] = [
                     "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar",
                     "items" => [
@@ -142,10 +142,10 @@ use yii\helpers\ArrayHelper;
                             "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-users"
                         ],
                         [
-                            "label" => Yii::t('andahrm', 'Leave Setting'), "url" => ["/leave/day-off/"], "icon" => "fa fa-line-chart",'active' => $active,
+                            "label" => Yii::t('andahrm', 'Leave Setting'), "url" => ["/leave/day-off/"], "icon" => "fa fa-line-chart", 'active' => $active,
                         ],
                     ]
-                ];                
+                ];
             } else {
                 $menuItems[] = ["label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar"];
             }
@@ -298,6 +298,7 @@ use yii\helpers\ArrayHelper;
                 \yiister\gentelella\widgets\Menu::widget(
                         [
                             "items" => [
+                                ["label" => "User", "url" => ["/user-admin"], "icon" => "user"],
                                 ["label" => "Setting", "url" => ["/setting"], "icon" => "cog"],
                             //["label" => "Person", "url" => ["/person"], "icon" => "files-o"],
                             ]

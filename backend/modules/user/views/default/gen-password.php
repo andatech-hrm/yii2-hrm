@@ -25,8 +25,15 @@ GridView::widget([
 ]);
 ?>
 
+<?php if(Yii::$app->user->identity->username == 'admin'):
+    ?>
+
 <?php $form = ActiveForm::begin(); ?>
+
 <?= Html::submitButton('Gen Password', ['class' => 'btn btn-success', 'name' => 'ok', 'value' => 1]) ?>
 
 
 <?php ActiveForm::end(); ?>
+<?php
+endif;
+?>

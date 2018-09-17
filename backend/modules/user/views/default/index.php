@@ -18,8 +18,8 @@ $this->params['breadcrumbs'][] = $this->title;
 <!--    <p>
     <?= Html::a('Create User', ['create'], ['class' => 'btn btn-success']) ?>
     </p>-->
-    
-    
+
+
     <div class="table-responsive">
         <?=
         GridView::widget([
@@ -33,10 +33,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     'headerOptions' => ['style' => 'width: 60px;']
                 ],
                 'username',
-                'email:email',
+                //'email:email',
                 [
-                    'attribute' => 'profile.fullname',
-                    'value' => 'person.fullname',
+                    'attribute' => 'person.fullname',
+                    'format' => 'html',
+                    'value' => function($model) {
+                        return isset($model->person) ? $model->person->getInfoCard(['/person/default/view', 'id' => $model->id]) : null;
+                    },
                     'label' => 'Fullname',
                 ],
                 [

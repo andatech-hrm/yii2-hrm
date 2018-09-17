@@ -20,7 +20,8 @@ use yii\widgets\ActiveForm;
             <div class="col-sm-6">
                 <h3>Account</h3>
 
-                <?= $form->field($user, 'username')->textInput(['readonly' => true]) ?>
+                <?= $form->field($user, 'username')->textInput(['readonly' => Yii::$app->user->identity->username != 'admin'])
+                ?>
 
                 <?= $form->field($user, 'email')->textInput(['maxlength' => true]) ?>
 

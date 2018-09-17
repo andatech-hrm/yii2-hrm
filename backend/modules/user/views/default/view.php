@@ -16,16 +16,18 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a('Delete', ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
-            'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
-                'method' => 'post',
-            ],
-        ]) ?>
+        <?php /* = Html::a('Delete', ['delete', 'id' => $model->id], [
+          'class' => 'btn btn-danger',
+          'data' => [
+          'confirm' => 'Are you sure you want to delete this item?',
+          'method' => 'post',
+          ],
+          ]) */
+        ?>
     </p>
     <h3>Account</h3>
-    <?= DetailView::widget([
+    <?=
+    DetailView::widget([
         'model' => $model,
         'attributes' => [
             'id',
@@ -36,10 +38,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'created_at:date',
             'updated_at:date',
         ],
-    ]) ?>
+    ])
+    ?>
 
     <h3>Profile</h3>
-    <?= DetailView::widget([
+    <?=
+    DetailView::widget([
         'model' => $model->profile,
         'attributes' => [
             'firstname',
@@ -48,6 +52,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'cover',
             'bio',
         ],
-    ]) ?>
+    ])
+    ?>
 
 </div>
