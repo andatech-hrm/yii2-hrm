@@ -179,23 +179,30 @@ class DefaultController extends Controller {
     }
 
     public function actionGenPassword($start = 0) {
-        $step = 50;
+        $step = 30;
         $offset = $start + $step;
         $modelUser = User::find()
-                ->where(['NOT IN', 'id', ['2', '209']]);
-
+                ->with('person')
+                ->where(['NOT IN', 'id', ['2', '209']])
+                //->andWhere(['>=', 'updated_at', strtotime('2018-09-17')])
+                ->andWhere(['status' => [User::STATUS_WAITING, null]])
+        ;
         $datas = [];
 //        print_r(Yii::$app->request->post());
 //        exit();
         if (Yii::$app->request->post('ok') || $start > 0) {
-            $count = $modelUser->count();
-            $modelUser = User::find()
-                    ->where(['NOT IN', 'id', ['2', '209']]);
-            $modelUser = $modelUser->limit($step)
-                    ->offset($start)
+
+//            $modelUser = User::find()
+//                    ->where(['NOT IN', 'id', ['2', '209']]);
+            $modelUserData = $modelUser->limit($step)
+                    ->offset(0)
                     ->all();
+//            $count = $modelUser->count();
+//            echo $count;
+            $count = count($modelUserData);
+            //exit();
             $errors = [];
-            foreach ($modelUser as $model) {
+            foreach ($modelUserData as $model) {
                 $new_password = "123456";
 //                print_r($model);
 //                exit();
@@ -215,14 +222,17 @@ class DefaultController extends Controller {
                     'msg' => Yii::t('andahrm/leave', 'The system successfully sent.')
                 ]);
 
-                if ($count > $offset) {
-                    return $this->redirect(['gen-password', 'start' => $offset]);
+                if ($count) {
+//                    echo $count;
+//                    exit();
+                    return $this->redirect(['gen-password', 'start' => $start + 1]);
                 } else {
                     return $this->redirect(['gen-password', 'success' => $count]);
                     //return $this->redirect(['gen-password', 'start' => $offset]);
                 }
             } else {
                 print_r($errors);
+                exit();
             }
         }
 

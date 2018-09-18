@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use yii\grid\GridView;
+use kartik\grid\GridView;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -16,6 +16,7 @@ use yii\grid\GridView;
 GridView::widget([
     'dataProvider' => $dataProvider,
     //'filterModel' => $searchModel,
+    'panel' => ['type' => 'primary', 'heading' => $type->title],
     'columns' => [
         'user_id',
         'fullname',
@@ -25,15 +26,16 @@ GridView::widget([
 ]);
 ?>
 
-<?php if(Yii::$app->user->identity->username == 'admin'):
+<?php if (Yii::$app->user->identity->username == 'admin'):
     ?>
 
-<?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin(); ?>
 
-<?= Html::submitButton('Gen Password', ['class' => 'btn btn-success', 'name' => 'ok', 'value' => 1]) ?>
+    <?= Html::submitButton('Gen Password', ['class' => 'btn btn-success', 'name' => 'ok', 'value' => 1]) ?>
 
 
-<?php ActiveForm::end(); ?>
-<?php
+    <?php ActiveForm::end(); ?>
+    <?php
+
 endif;
 ?>
