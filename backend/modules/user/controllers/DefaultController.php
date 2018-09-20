@@ -185,7 +185,8 @@ class DefaultController extends Controller {
                 ->with('person')
                 ->where(['NOT IN', 'id', ['2', '209']])
                 //->andWhere(['>=', 'updated_at', strtotime('2018-09-17')])
-                ->andWhere(['status' => [User::STATUS_WAITING, null]])
+                //->andWhere(['status' => [User::STATUS_WAITING, null]])
+                ->andWhere(['status' => [User::STATUS_ACTIVE]])
         ;
         $datas = [];
 //        print_r(Yii::$app->request->post());
@@ -209,12 +210,12 @@ class DefaultController extends Controller {
                 if (isset($model->person) && $citizen_id = $model->person->citizen_id) {
                     $new_password = substr($citizen_id, -4);
                 }
-                $model->setPassword($new_password);
-                $model->generateAuthKey();
-                $model->status = User::STATUS_ACTIVE;
-                if (!$model->save()) {
-                    $errors[] = $model->getErrors();
-                }
+//                $model->setPassword($new_password);
+//                $model->generateAuthKey();
+//                $model->status = User::STATUS_ACTIVE;
+//                if (!$model->save()) {
+//                    $errors[] = $model->getErrors();
+//                }
             }
             if (!$errors) {
                 Yii::$app->getSession()->setFlash('saved', [
