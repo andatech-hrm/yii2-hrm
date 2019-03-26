@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use andahrm\person\models\Person;
 
 /* @var $this yii\web\View */
 /* @var $user backend\modules\user\models\User */
@@ -44,6 +45,17 @@ use yii\widgets\ActiveForm;
                 <?= $form->field($profile, 'firstname')->textInput(['readonly' => true]) ?>
 
                 <?= $form->field($profile, 'lastname')->textInput(['readonly' => true]) ?>
+
+                <br/>
+                <h3>Roles</h3>
+                <?=
+                $mkey = 'roles';
+                $roleList = Person::getRoleList();
+                //unset($roleList['president']);
+                $roles = Yii::$app->authManager->getRolesByUser($user->id);
+                echo Html::checkBoxList('Roles', array_keys($roles), $roleList, ['separator' => '<br/>','label'=>false]);
+                ?>
+
             </div>
         </div>
         <div class="clearfix"></div>

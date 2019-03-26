@@ -114,6 +114,7 @@ class DefaultController extends Controller {
             $user->setPassword(Yii::$app->request->post('User')['newPassword']);
             $user->generateAuthKey();
             if ($user->save()) {
+                $this->setRoles($user->id, Yii::$app->request->post('Roles', []));
                 $profile->load(Yii::$app->request->post());
                 $profile->save();
                 return $this->redirect(['view', 'id' => $user->id]);
@@ -260,6 +261,34 @@ class DefaultController extends Controller {
         return $this->render('gen-password', [
                     'dataProvider' => $dataProvider
         ]);
+    }
+
+    protected function setRoles($id, $checkedRoles = []) {
+        $auth = Yii::$app->authManager;
+
+        $systemRoles = $auth->getRoles();
+        $keyUserRoles = array_keys($auth->getRolesByUser($id));
+        foreach ($systemRoles as $key => $systemRole) {
+            //echo $key;
+            if (in_array($key, $checkedRoles)) {
+                // echo ' Checked';
+                if (in_array($key, $keyUserRoles)) {
+                    //echo ' No action';
+                } else {
+                    //echo ' Add this';
+                    $role = $auth->getRole($key);
+                    $auth->assign($role, $id);
+                }
+            } else {
+                //echo ' No Check';
+                if (in_array($key, $keyUserRoles)) {
+                    //echo ' Remove this';
+                    $role = $auth->getRole($key);
+                    $auth->revoke($role, $id);
+                }
+            }
+        }
+        // Yii::$app->end();
     }
 
 }

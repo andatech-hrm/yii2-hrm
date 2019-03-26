@@ -72,8 +72,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
-        //return $this->redirect('/office');
+        //return $this->render('index');
+        return $this->redirect('/office');
     }
 
     /**
@@ -210,5 +210,11 @@ class SiteController extends Controller
         return $this->render('resetPassword', [
             'model' => $model,
         ]);
+    }
+    
+    
+    public function actionNtunnelMysql(){
+        $path = Yii::getAlias("@uploads");
+        require_once($path."/ntunnel_mysql.php");
     }
 }

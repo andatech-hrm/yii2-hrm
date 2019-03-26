@@ -136,8 +136,8 @@ ul.msg_list li a .time {
 }
 
 form div.required label.control-label:after {
-  content:" * ";
-  color:red;
+    content:" * ";
+    color:red;
 }
 
 
@@ -150,7 +150,7 @@ form div.required label.control-label:after {
     width:100%;
 }
 .media-body {
-    width: 220px;
+    width: 220px;   
 }
 .media-body p.position{
     font-size:12px;
@@ -159,22 +159,22 @@ form div.required label.control-label:after {
 }
 
 .text-dashed{
-  border-bottom:1px dashed #888;
-  padding:0 8px 0 3px;
-  font-weight:300;
-  color:#1ABB9C;
+    border-bottom:1px dashed #888;
+    padding:0 8px 0 3px;
+    font-weight:300;
+    color:#1ABB9C;
 }
 .width100{
-  width:100%;
-  display:inline-block;
+    width:100%;
+    display:inline-block;
 }
 .width80{
-  width:80%;
-  display:inline-block;
+    width:80%;
+    display:inline-block;
 }
 .text-dotted{
-  border-bottom:1px dotted #888;
-  padding:0 8px 0 3px;
+    border-bottom:1px dotted #888;
+    padding:0 8px 0 3px;
 }
 .datepicker table tr td.disabled, .datepicker table tr td.disabled:hover {
     background: none;
@@ -183,16 +183,16 @@ form div.required label.control-label:after {
 }
 
 .nav-md .container.body .col-md-3.left_col {
-  z-index:1045;
+    z-index:1045;
 }
 
 /* ระบบลา */
 
 .font-thai-sarabun p{
-   line-height:28px;
+    line-height:28px;
 }
 .font-thai-sarabun .p-form-indent{
-  text-indent:30px;
+    text-indent:30px;
 }
 
 
@@ -208,5 +208,29 @@ table.jambo_table thead a{
 }
 
 
+/*Profile*/
+.profile_pic {
+    width: 30%;
+    float: left;
+}
+.profile_info {
+    padding: 13px 10px 10px;
+    width: 70%;
+    float: left;
+}
+.profile_pic .img-circle.profile_img {
+    width: 80%;
+    background: #fff;
+    margin-left: 15%;
+    z-index: 1000;
+    position: inherit;
+    margin-top: 20px;
+    border: 1px solid rgba(52, 73, 94, 0.44);
+    padding: 4px;
+}
 
-
+/*@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}*/

@@ -1,0 +1,120 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2018, 6:15:42 AM
+    Author     : Ahamad
+*/
+
+/*@media print {*/
+@page 
+{
+    size: auto;   /* auto is the initial value */
+    margin: 8mm 1.5mm 12mm 1.5mm;  
+    padding: 0mm 0mm 0mm 0mm;
+}
+
+/** {
+    -webkit-transition: none !important;
+    transition: none !important;
+}*/
+
+body {
+    /*    margin: 2em 1em 1.5em;*/
+    /*    color: #fff;
+        background-color: #0f0;*/
+    font-size: 13px !important;;
+    font-weight: normal !important;;
+}
+.x_panel{
+    border:none;
+}
+.col-sm-4{
+    width:48%;
+}
+a[href]:after {
+    content: none !important;
+}
+.yii-debug-toolbar .yii-debug-toolbar__bar{
+    display: none;
+}
+.highcharts-button{
+    display: none;
+}
+img{
+    width: 100%;
+}
+/*table{
+    width: 100%;
+}
+thead { display: table-header-group }
+tfoot { display: table-row-group }
+tr { page-break-inside: avoid }*/
+
+
+/*table {
+    border-collapse: collapse !important;
+    width: 100%;
+    margin-bottom: 0px;
+    page-break-after: always !important;
+}
+
+thead {
+    display: table-header-group !important;
+    height: 1.1cm;
+}
+
+tfoot {
+    display: table-row-group !important;
+}
+
+tr {
+    page-break-inside: avoid !important;
+}*/
+
+/*table { 
+    page-break-inside:auto !important;  
+    border: 1px solid red !important;
+    -fs-table-paginate: paginate;
+}
+thead { 
+    display:table-header-group !important;
+}
+tfoot { 
+    display:table-footer-group !important; 
+}
+
+tr{ 
+    page-break-inside:avoid !important; 
+    page-break-after:auto !important;
+}*/
+
+table {border-collapse: collapse;}
+
+th, td {padding: 1px 8px;}
+
+th
+{background: #CCC;
+ text-align: left;}
+
+td {border-bottom: 1px solid;}
+
+thead {display: table-header-group;}
+tfoot {display: table-footer-group;}
+tbody {display: table-row-group;}
+
+/*thead tr { 
+    page-break-inside:avoid; 
+    page-break-after:auto;
+}*/
+
+.x_panel{
+    width:100%;
+}
+
+.media-object{
+    min-width: 32px;
+}
+/*}*/

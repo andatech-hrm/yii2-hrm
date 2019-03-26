@@ -1,6 +1,7 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 use mdm\admin\components\Helper;
 //use yiister\gentelella\widgets\Menu;
 use dmstr\widgets\Menu;
@@ -20,29 +21,33 @@ use yii\helpers\ArrayHelper;
     <!-- menu prile quick info -->
     <div class="profile">
         <div class="profile_pic">
-            <img src="<?= $person->getPhoto(); ?>" alt="..." class="img-circle profile_img">
+            <a href="<?= Url::to(["/profile/"]) ?>">
+                <img src="<?= $person->getPhoto(); ?>" alt="..." class="img-circle profile_img">
+            </a>
         </div>
         <div class="profile_info">
-            <span><?= Yii::t('app', 'Welcome') ?>,</span>
-            <h2><?= $person->getFullname(); ?></h2>
+            <a href="<?= Url::to(["/profile/"]) ?>">
+                <span><?= Yii::t('app', 'Welcome') ?>,</span>
+                <h2><?= $person->getFullname(); ?></h2>
+                <small><?= current($person->getRoles()); ?></small>
+            </a>
         </div>
     </div>
     <!-- /menu prile quick info -->
 
-    <br />
+    <div class="clearfix"></div>
 
     <!-- sidebar menu -->
     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
         <div class="menu_section">
-            <h3><?= current($person->getRoles()); ?></h3>
 
 
 
             <?php
             $menuItemsSelf = [];
             $menuItemsSelf[] = ["label" => Yii::t('andahrm', 'Home'), "url" => ["/"], "icon" => "fa fa-home"];
-            $menuItemsSelf[] = ["label" => $person->fullname, "url" => ["/profile/"], "icon" => "fa fa-user-circle-o"];
+//            $menuItemsSelf[] = ["label" => $person->fullname, "url" => ["/profile/"], "icon" => "fa fa-user-circle-o"];
 
 
             $menuItems = [];
@@ -102,6 +107,11 @@ use yii\helpers\ArrayHelper;
                         'url' => ["/structure/base-salary"],
                         'icon' => 'fa fa-money'
                     ],
+                    [
+                        'label' => Yii::t('andahrm/structure', 'Presidents'),
+                        'url' => ["/structure/president"],
+                        'icon' => 'fa fa-user-circle'
+                    ],
                 ]
             ];
             $menuItems[] = [
@@ -122,6 +132,9 @@ use yii\helpers\ArrayHelper;
                     [
                         "label" => Yii::t('andahrm', 'Competency Information'), "url" => ["/person/competency-information"], "icon" => "fa fa-list"
                     ],
+                    [
+                        "label" => Yii::t('andahrm', 'Retired'), "url" => ["/person/retired"], "icon" => "fa fa-list"
+                    ],
                 ]
             ];
             if (Yii::$app->user->can('admin')) {
@@ -136,16 +149,19 @@ use yii\helpers\ArrayHelper;
                         break;
                 }
                 $menuItems[] = [
-                    "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar",
-                    "items" => [
-                        [
-                            "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-users"
-                        ],
-                        [
-                            "label" => Yii::t('andahrm', 'Leave Setting'), "url" => ["/leave/day-off/"], "icon" => "fa fa-line-chart", 'active' => $active,
-                        ],
-                    ]
+                    "label" => Yii::t('andahrm', 'Form Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar",
+//                    "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar",
+//                    "items" => [
+//                        [
+//                            "label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-users"
+//                        ],
+//                        [
+//                            "label" => Yii::t('andahrm', 'Leave Setting'), "url" => ["/leave/day-off/"], "icon" => "fa fa-line-chart", 'active' => $active,
+//                        ],
+//                    ]
                 ];
+            } else if (Yii::$app->user->can('president')) {
+                $menuItems[] = ["label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/president/"], "icon" => "fa fa-calendar"];
             } else {
                 $menuItems[] = ["label" => Yii::t('andahrm', 'Leave'), "url" => ["/leave/default/"], "icon" => "fa fa-calendar"];
             }
@@ -173,11 +189,11 @@ use yii\helpers\ArrayHelper;
                         "icon" => "fa fa-users",
                     //'active' => (strpos($this->context->route,'report/person') !== false)?true:false
                     ],
-                    [
-                        "label" => Yii::t('andahrm', 'Leave Report'),
-                        "url" => ["/report/leave/"],
-                        "icon" => "fa fa-users"
-                    ],
+//                    [
+//                        "label" => Yii::t('andahrm', 'Leave Report'),
+//                        "url" => ["/report/leave/"],
+//                        "icon" => "fa fa-users"
+//                    ],
                     [
                         "label" => Yii::t('andahrm', 'Position Report'),
                         "url" => ["/report/position/"],
